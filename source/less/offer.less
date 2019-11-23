@@ -1,27 +1,82 @@
 .offer {
-  background-color: #1d2631 ;
-  color: #ffffff ;
-  & a {color: #ffffff ;}
+  background-color: @very-dark ;
+  text-align: @text-align;
+  min-width: 320px ;
+  margin: 0 ;
+  padding: 0 ;
+
 }
+
 .offer__slogan {
   display: block;
-  min-height: 462px ;
+  box-sizing: border-box;
+  height: 395px ;
+
+  padding-top: 19px ;
+  padding-left: 40px  ;
+  padding-right: 40px ;
+  margin: 0 ;
+  margin-bottom: 28px ;
+
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-color: #283645 ;
+  background-position: bottom ;
+  background-color: @very-dark ;
+  font-family: OpenSans-Light ;
+  font-size: 24px ;
   color: #ffffff ;
+  font-weight: 300 ;
+}
+.offer__slogan--short{
+  height: 237px ;
+  background-position: top ;
+  padding-top: 101px ;
 }
 .offer__header {
  position: relative;
+}
 
-  }
 .offer__image{
 position: absolute;
-top: 176px ;
-width: 314px;
-height: 320px;
+top: 109px ;
+width: 100% ;
+min-width: 320px;
+height: 314px;
 background-image: url(../img/iphone-hand-mobile@1x.png);
 background-repeat: no-repeat;
 background-color: rgba(255, 0, 0, 0.2);
-
 }
+
+.offer__available-os{
+  display: block;
+  margin: 0 ;
+  padding-top: 35px ;
+  padding-bottom: 35px ;
+
+  font-family: OpenSans-Light ;
+  font-size: 14px ;
+  line-height: 24px ;
+  color: #ffffff ;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.offer__button{
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 16px ;
+
+  width: 281px ;
+  height: 55px ;
+
+  background-color: @very-dark ;
+
+  border: 3px solid #ffffff ;
+  border-radius:  26px ;
+
+  font-family: OpenSans-Bold ;
+  font-size: 18px ;
+  color: #ffffff ;
+  line-height: 18px ;
+  text-align: center;
+  text-decoration: none;
+
+  }

@@ -1,11 +1,26 @@
 .site-list{
+  list-style: none;
   margin: 0 ;
   padding: 0 ;
 }
+
 .site-list__item{
   display: block;
-  min-height: 64px ;
-background-color:  #283645 ;
-border: 1px solid #1d2631 ;
+  box-sizing: border-box;
+  padding-top: 15px ;
+  height: 63px ;
+  background-color:  @dark ;
 
+  border: 2px solid @very-dark ;
+  border-top: 1px solid @light-dark ;
+
+  text-align: @text-align ;
+}
+.site-list__item a {
+  font-family: OpenSans-Bold ;
+  color: #ffffff ;
+  font-size: 18px ;
+  line-height: 32px ;
+  text-decoration: none ;
+  text-transform: uppercase;
 }

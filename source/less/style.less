@@ -1,10 +1,30 @@
+@font-face {
+  font-family: OpenSans ;
+  src: url(../fonts/opensans.woff),
+       url(../fonts/opensans.woff2);
+}
+@font-face {
+  font-family: OpenSans-Bold ;
+  src: url(../fonts/opensansbold.woff),
+       url(../fonts/opensansbold.woff2);
+}
+@font-face {
+  font-family: OpenSans-Light ;
+  src: url(../fonts/opensanslight.woff),
+       url(../fonts/opensanslight.woff2);
+}
 @import "page-header";
 @import "mixins";
-
+@import "variables";
 .visually-hidden{
   .visually-hidden ()
 }
+
 @import "site-list" ;
 @import "offer";
 @import "advantages";
 @import "post";
+@import "os-list";
+@import "recent";
+@import "copyright";
+@import "main-nav";
