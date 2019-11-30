@@ -1,23 +1,24 @@
 .offer {
-  min-width: 320px ;
+  position: relative;
+
+  //min-width: 320px ;
   margin: 0 ;
   padding: 0 ;
 
-  text-align: center;
+  //text-align: center;
 
-  background-color: @very-dark ;
-  border: 3px dotted green ;
-  box-sizing: border-box;
+  //background-color: @very-dark ;
+  //border: 3px dotted green ;
+  //box-sizing: border-box;
 }
 
-.offer__slogan {
+/*.offer__slogan {
   display: block;
   height: 395px ;
   padding-top: 19px ;
   padding-left: 40px  ;
   padding-right: 40px ;
   margin: 0 ;
-  margin-bottom: 28px ;
 
   font-family: OpenSans-Light ;
   font-size: 24px ;
@@ -36,13 +37,18 @@
 
   height: 237px ;
   padding-top: 101px ;
-}
+}*/
 
 .offer__header {
  position: relative;
+
+ min-height: 396px ;
+
+ //для разметки:
+ background-color: rgba(255, 0, 0, 0.5);
 }
 
-.offer__image{
+/*.offer__image{
 position: absolute;
 top: 109px ;
 
@@ -53,28 +59,30 @@ height: 314px;
 background-image: url(../img/iphone-hand-mobile@1x.png);
 background-repeat: no-repeat;
 background-color: rgba(255, 0, 0, 0.2);
-}
+}*/
 
 .offer__available-os{
   display: block;
-
-  margin: 0 ;
-  padding-top: 35px ;
-  padding-bottom: 35px ;
+  margin-bottom: 30px  ;
+  padding: 0 20px ;
 
   font-family: OpenSans-Light, Arial, sans-serif ;
   font-size: 14px ;
   line-height: 24px ;
   color: #ffffff ;
+  text-align: center;
 
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(153, 202, 60, 0.5);
 }
+
 .offer__button{
-  display: inline-block;
+  display: block;
   width: 281px ;
   height: 55px ;
+  margin: 28px auto;
   padding-top: 16px ;
 
+  //для разметки
   font-family: OpenSans-Bold, Arial, sans-serif ;
   font-size: 18px ;
   color: #ffffff ;
@@ -82,8 +90,91 @@ background-color: rgba(255, 0, 0, 0.2);
   text-align: center;
   text-decoration: none;
 
-  background-color: @very-dark ;
+  background-color: rgba(238, 187, 66, 0.5);
+  //background-color: @very-dark ;
   border: 3px solid #ffffff ;
   border-radius:  26px ;
   box-sizing: border-box;
+  }
+
+.offer__os-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 270px ;
+  margin: 0 ;
+
+  background-color: rgba(60, 150, 215, 0.5);
+  }
+
+.offer__os-wrapper::before {
+  position: absolute;
+
+  content: ".offer__os-wrapper"
+}
+
+.offer__slogan--short{
+  display: block;
+  min-height: 170px ;
+  margin: 0 ;
+
+  background-color: rgba(255, 0, 0, 0.5) ;
+}
+
+@media (min-width: @tablet-width) {
+ .offer__header{
+   min-height: 618px ;
+ }
+
+ .offer__os-wrapper{
+   position: absolute;
+   top: 265px ;
+   left: 20px ;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 300px ;
+   min-height: 245px ;
+   margin: 0 ;
+
+   background-color: rgba(60, 150, 215, 0.5);
+  }
+
+  .offer__button{
+    width: 300px ;
+    margin: 0 ;
+  }
+
+  .offer__available-os{
+    margin-bottom: 0 ;
+  }
+
+  .offer__slogan--short{
+    min-height: 330px ;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .offer__header{
+    min-height: 852px ;
+  }
+
+  .offer__os-wrapper{
+    position: absolute;
+    top: 450px ;
+    left: 130px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px ;
+    min-height: 285px ;
+    margin: 0 ;
+
+    background-color: rgba(60, 150, 215, 0.5);
+    }
+    .offer__slogan--short{
+      min-height: 394px ;
+    }
   }

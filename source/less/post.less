@@ -1,11 +1,9 @@
 .post{
-  min-width: 280px ;
+  min-height: 300px ;
+  min-width: 260px ;
+  margin: 0 ;
 
-  background-color: #f2f2f2 ;
-}
-
-.post__image{
-
+  background-color: rgba(69, 121, 189, 0.5);
 }
 
 .post__name{
@@ -34,4 +32,18 @@
   font-size: 12px ;
   line-height: 24px ;
   color: @lipstick ;
+}
+
+@media (min-width: @tablet-width){
+  .post{
+    min-height: 455px ;
+    min-width: 300px ;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .post{
+    min-height: 555px ;
+    min-width: 300px ;
+  }
 }

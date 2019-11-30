@@ -1,4 +1,23 @@
 .page-footer{
-  border: 2px dotted #40f767;
-  box-sizing: border-box;
+  width: 320px;
+  min-height: 286px ;
+  margin: auto;
+
+  background-color: rgba(60, 150, 215, 0.5);
+  //border: 2px dotted #40f767;
+  //box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer{
+    width: 660px ;
+    min-height: 128px ;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer{
+    width: 1200px ;
+    min-height: 200px ;
+  }
 }
