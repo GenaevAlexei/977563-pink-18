@@ -1,0 +1,30 @@
+.fake-news{
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .fake-news{
+    display: block;
+    width: 660px ;
+    min-height: 412px ;
+
+    background-color: rgba(236, 232, 48, 0.5);
+  }
+
+  .fake-news::before{
+    content: ".fake-news"
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fake-news{
+  display: block;
+  width: 1200px ;
+  min-height: 412px ;
+
+  background-color: rgba(236, 232, 48, 0.5);
+  }
+
+  .fake-news::before{
+    content: ".fake-news"
+  }
+}

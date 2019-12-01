@@ -1,5 +1,43 @@
 .page-main{
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid red ;
+  width: 320px ;
+  min-height: 3103px ; //временно для разметки
+  margin: auto;
+
+  background-color: rgba(154, 0, 183, 0.5) ;
+}
+
+.page-main--form{
+  min-height: 2404px ;
+}
+
+.page-main--photo{
+  min-height: 3584px ;
+}
+
+@media (min-width: @tablet-width){
+  .page-main{
+    width: 660px ;
+  }
+
+  .page-main--form{
+    min-height: 2771px ;
+  }
+
+  .page-main--photo{
+    min-height: 3348px ;
+  }
+}
+
+@media (min-width: @desktop-width){
+  .page-main{
+    width: 1200px ;
+  }
+
+  .page-main--form{
+    min-height: 1860px ;
+  }
+
+  .page-main--photo{
+    min-height: 3150px ;
+  }
 }
