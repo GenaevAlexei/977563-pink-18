@@ -9,15 +9,22 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">page-header__logo
-          <!--<img class="page-header__logo-image"
-          src="img/logo-pink-white-mobile.svg"
-          width="75" height="22" alt="Мобильное приложение Pink">-->
-        </a>
-        <nav class="main-nav">main-nav
-          <button class="main-nav__toggle" type="button">
+        <div class="page-header__logo-wrapper
+                    page-header__logo-wrapper--closed
+                    page-header__logo-wrapper--nojs">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image"
+            src="img/logo-pink-white-mobile.svg"
+            width="75" height="22" alt="Мобильное приложение Pink">
+          </a>
+          <button class="page-header__toggle
+                         page-header__toggle--closed
+                         page-header__toggle--nojs"
+                  type="button">
             Открыть меню
           </button>
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -40,14 +47,15 @@
     <main class="page-main">
       <!--<h1 class="visually-hidden">Pink! Раскрась серые будни!</h1>-->
       <div class="offer">
-        <div class="offer__header">offer__header
-          <!--<h2 class="visually-hidden">
+        <div class="offer__header">
+          <h2 class="visually-hidden">
             Предложение скачать приложение
           </h2>
-          <div class="offer__image"></div>
-          <p class="offer__slogan">
+          <div class="offer__image">
+          </div>
+          <p class="offer__slogan offer__slogan--nojs">
             Взгляните на жизнь иначе!
-          </p>-->
+          </p>
         </div>
         <div class="offer__os-wrapper">
           <a class="offer__button" href="#">
@@ -114,5 +122,33 @@
       <section class="fake-news">
       </section>
     </main>
+    <script>
+    var navToggle = document.querySelector('.page-header__toggle');
+    var mainNav = document.querySelector('.main-nav');
+    var headerLogo = document.querySelector('.page-header__logo-wrapper');
+    var offerSlogan = document.querySelector('.offer__slogan');
+
+    navToggle.classList.remove('page-header__toggle--nojs');
+    mainNav.classList.remove('main-nav--nojs');
+    headerLogo.classList.remove('page-header__logo-wrapper--nojs');
+    offerSlogan.classList.remove('offer__slogan--nojs');
+
+    navToggle.addEventListener('click', function(){
+      if(mainNav.classList.contains('main-nav--closed')){
+        mainNav.classList.remove('main-nav--closed');
+        headerLogo.classList.remove('page-header__logo-wrapper--closed');
+        offerSlogan.classList.add('offer__slogan--nav-opened');
+        navToggle.classList.remove('page-header__toggle--closed');
+        navToggle.classList.add('page-header__toggle--opened');
+      }
+      else{
+        mainNav.classList.add('main-nav--closed');
+        headerLogo.classList.add('page-header__logo-wrapper--closed');
+        offerSlogan.classList.remove('offer__slogan--nav-opened');
+        navToggle.classList.add('page-header__toggle--closed');
+        navToggle.classList.remove('page-header__toggle--opened');
+      }
+    })
+    </script>
   </body>
 </html>
