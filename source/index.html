@@ -25,9 +25,9 @@
           </button>
         </div>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <div class="main-nav__wrapper">
+          <!--<div class="main-nav__wrapper">-->
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--current">
                 <a>Главная</a>
               </li>
               <li class="site-list__item">
@@ -40,7 +40,7 @@
                 <a href="#">Html Academy</a>
               </li>
             </ul>
-          </div>
+          <!--</div>-->
         </nav>
       </div>
     </header>
@@ -62,17 +62,17 @@
             Скачать приложение
           </a>
           <ul class="offer__os os-list">
-            <li class="os-list__item">
+            <li class="os-list__item os-list__item--apple">
               <a href="#">
                 Apple
               </a>
             </li>
-            <li class="os-list__item">
+            <li class="os-list__item os-list__item--android">
               <a href="#">
                 Android
               </a>
             </li>
-            <li class="os-list__item">
+            <li class="os-list__item os-list__item--windows">
               <a href="#">
                 Windows
               </a>
@@ -85,70 +85,49 @@
         </div>
       </div>
       <section class="advantages">
-        <div class="advantages__header">
-          <h2 class="visually-hidden">Преимущества Pink</h2>
-          <p class="advantages__problem"><!--Устали от серости мегаполиса?--></p>
-          <p class="advantages__problem"><!--Нам есть, что вам предложить!--></p>
+        <div class="advantages__header-wrapper">
+          <div class="advantages__header">
+            <h2 class="visually-hidden">Преимущества Pink</h2>
+            <p class="advantages__problem">Устали от серости мегаполиса?</p>
+            <p class="advantages__problem">Нам есть, что вам предложить!</p>
+          </div>
+          <div class="advantages__triangle">
+            <svg>
+              <polygon fill="#f2f2f2" points="1200,0 0,0 0,119.074"/>
+            </svg>
+          </div>
         </div>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <!--<h3 class="advantages__title">Поднимает настроение</h3>
+            <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">
               Приложение позволит вам победить осеннюю хандру и
               депрессию буквально в несколько кликов!
-            </p>-->
+            </p>
           </li>
           <li class="advantages__item">
-            <!--<h3 class="advantages__title">Меняет мир вокруг</h3>
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">
               Сделайте снимок и украсьте его
               смайликом или текстовой подписью,
               чтобы усилить эффект
-            </p>-->
+            </p>
           </li>
           <li class="advantages__item">
-            <!--<h3 class="advantages__title">Заводит новых друзей</h3>
+            <h3 class="advantages__title">Заводит новых друзей</h3>
             <p class="advantages__description">
               Ставьте лайки, комментируйте,
               делитесь фотографиями с друзьями и
               заводите новых
-            </p>-->
+            </p>
           </li>
         </ul>
-        <!--<img class="advantages__img" width="" height=""
-        src="../img/iphone-screen-mobile@1x.png"
-        alt="Пинк на вашем смартфоне">-->
+        <div class="advantages__img">
+        </div>
       </section>
       <section class="fake-news">
       </section>
     </main>
-    <script>
-    var navToggle = document.querySelector('.page-header__toggle');
-    var mainNav = document.querySelector('.main-nav');
-    var headerLogo = document.querySelector('.page-header__logo-wrapper');
-    var offerSlogan = document.querySelector('.offer__slogan');
-
-    navToggle.classList.remove('page-header__toggle--nojs');
-    mainNav.classList.remove('main-nav--nojs');
-    headerLogo.classList.remove('page-header__logo-wrapper--nojs');
-    offerSlogan.classList.remove('offer__slogan--nojs');
-
-    navToggle.addEventListener('click', function(){
-      if(mainNav.classList.contains('main-nav--closed')){
-        mainNav.classList.remove('main-nav--closed');
-        headerLogo.classList.remove('page-header__logo-wrapper--closed');
-        offerSlogan.classList.add('offer__slogan--nav-opened');
-        navToggle.classList.remove('page-header__toggle--closed');
-        navToggle.classList.add('page-header__toggle--opened');
-      }
-      else{
-        mainNav.classList.add('main-nav--closed');
-        headerLogo.classList.add('page-header__logo-wrapper--closed');
-        offerSlogan.classList.remove('offer__slogan--nav-opened');
-        navToggle.classList.add('page-header__toggle--closed');
-        navToggle.classList.remove('page-header__toggle--opened');
-      }
-    })
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

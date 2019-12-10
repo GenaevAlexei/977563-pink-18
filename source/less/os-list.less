@@ -1,15 +1,54 @@
 .os-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center ;
+  align-items: center ;
   min-height: 56px ;
   margin: 0 ;
   padding: 0 ;
 
   list-style: none;
 
-  background-color: rgba(153, 202, 60, 0.5);
+  //background-color: rgba(153, 202, 60, 0.5);
 }
 
-.os-list__item a{
+.os-list__item{
+  margin: 0 18px ;
+}
+
+.os-list__item--apple a{
   color: yellow ;
+  font-size: 0 ;
+
+  &::before{
+    content: url(../img/logo-apple.svg) ;
+
+    position: relative;
+    top: 1px ;
+    left: 0px ;
+  }
+}
+
+.os-list__item--android a{
+  color: yellow ;
+  font-size: 0 ;
+
+  &::before{
+    content: url(../img/logo-android.svg) ;
+
+    position: relative;
+    top: 4px ;
+    left: -2px ;
+  }
+}
+
+.os-list__item--windows a{
+  color: yellow ;
+  font-size: 0 ;
+
+  &::before{
+    content: url(../img/logo-microsoft.svg) ;
+
+    position: relative;
+    top: 5px ;
+  }
 }

@@ -1,7 +1,8 @@
 .offer {
   position: relative;
+  top: -71px ;
 
-  margin: 0 ;
+  margin-bottom: -71px ;
   padding: 0 ;
 
   text-align: center;
@@ -12,14 +13,15 @@
 
 .offer__slogan {
   display: block;
-  min-height: 465px ;
-  padding-top: 89px ;
+  min-height: 467px ;
+  padding-top: 93px ;
   padding-left: 40px  ;
   padding-right: 40px ;
   margin: 0 ;
 
   font-family: OpenSans-Light ;
   font-size: 24px ;
+  line-height: 29px ;
   color: #ffffff ;
   font-weight: 300 ;
 
@@ -30,16 +32,19 @@
   box-sizing: border-box;
   }
 
-.offer__slogan--nav-opened, .offer__slogan--nojs {
-  min-height: 395px ;
-  padding-top: 19px ;
+/*Для photo.html и form.html */
+.offer--short{
+  position: relative;
+  top: -66px ;
+
+  margin-bottom: -70px ;
 }
 
 .offer__slogan--short{
-  background-position: top ;
-
   height: 237px ;
-  padding-top: 101px ;
+  padding-top: 98px ;
+
+  background-position: top ;
 }
 
 .offer__header {
@@ -51,9 +56,9 @@
  //background-color: rgba(255, 0, 0, 0.5);
 }
 
-/*.offer__image{
+.offer__image{
 position: absolute;
-top: 109px ;
+bottom: -28px ;
 
 width: 100% ;
 min-width: 320px;
@@ -61,8 +66,8 @@ height: 314px;
 
 background-image: url(../img/iphone-hand-mobile@1x.png);
 background-repeat: no-repeat;
-background-color: rgba(255, 0, 0, 0.2);
-}*/
+//background-color: rgba(255, 0, 0, 0.2);
+}
 
 .offer__available-os{
   display: block;
@@ -75,7 +80,7 @@ background-color: rgba(255, 0, 0, 0.2);
   color: #ffffff ;
   text-align: center;
 
-  background-color: rgba(153, 202, 60, 0.5);
+  //background-color: rgba(153, 202, 60, 0.5);
 }
 
 .offer__button{
@@ -83,9 +88,8 @@ background-color: rgba(255, 0, 0, 0.2);
   width: 281px ;
   height: 55px ;
   margin: 28px auto;
-  padding-top: 16px ;
+  padding-top: 14px ;
 
-  //для разметки
   font-family: OpenSans-Bold, Arial, sans-serif ;
   font-size: 18px ;
   color: #ffffff ;
@@ -93,28 +97,30 @@ background-color: rgba(255, 0, 0, 0.2);
   text-align: center;
   text-decoration: none;
 
-  background-color: rgba(238, 187, 66, 0.5);
-  //background-color: @very-dark ;
+  background-color: @very-dark ;
   border: 3px solid #ffffff ;
   border-radius:  26px ;
   box-sizing: border-box;
+
+  &:hover{
+    color: @lipstick ;
+    background-color: @white ;
   }
+  &:active{
+    color: @lipstick-transparent30 ;
+    background-color: @white ;
+  }
+}
 
 .offer__os-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 270px ;
+  min-height: 271px ;
   margin: 0 ;
 
-  background-color: rgba(60, 150, 215, 0.5);
+  //background-color: rgba(60, 150, 215, 0.5);
   }
-
-.offer__os-wrapper::before {
-  position: absolute;
-
-  content: ".offer__os-wrapper"
-}
 
 .offer__slogan--short{
   display: block;
