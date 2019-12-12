@@ -20,6 +20,20 @@
   }
 }
 
+.page-footer__logo-link{
+  &:hover .footer-pink-logo__letter{
+    fill: @lipstick ;
+  }
+
+  &:active .footer-pink-logo__letter{
+    fill: @dark ;
+  }
+
+  &:active{
+    opacity: 0.3 ;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer{
     width: 660px ;

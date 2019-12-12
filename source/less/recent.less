@@ -1,15 +1,23 @@
+.recent{
+  background-color: @white ;
+}
+
 .recent__appeal{
   display: block;
   min-height: 184px ;
   margin: 0 ;
+  padding: 44px 35px ;
 
   font-family: OpenSans, Arial, sans-serif ;
   font-size: 14px ;
   line-height: 30px ;
-  color: #283645 ;
+  color: @dark ;
+  text-align: center ;
 
-  background-color: rgba(204, 220, 44, 0.5);
   box-sizing: border-box;
+  &--bottom{
+    padding: 22px 33px ;
+  }
 }
 
 .recent__list{
@@ -21,10 +29,7 @@
 
 .recent__item{
   margin-bottom: 20px ;
-}
-
-.recent__item--day{
-  width: 320px ;
+  min-height: 300px ;
 }
 
 @media (min-width: @tablet-width) {
