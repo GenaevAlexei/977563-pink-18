@@ -1,12 +1,40 @@
 .post{
+ position: relative;
+
   width: 100% ;
   height: auto;
   margin: 0 auto ;
 }
 
+.post__day{
+  &::before{
+    content: "Панорама дня";
+
+    position: absolute;
+    left: 160px ;
+
+    padding-top: 6px ;
+    padding-left: 20px ;
+    width: 140px ;
+    height: 36px ;
+    box-sizing: border-box;
+
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 12px ;
+    line-height: 24px ;
+    text-transform: uppercase;
+    color: @white ;
+    letter-spacing: 0.03em ;
+
+
+    background-color: @lipstick ;
+  }
+}
+
 .post__image{
   display: block ;
   margin: 0 auto ;
+  width: 280px
 }
 
 .post__image--day{
@@ -21,7 +49,7 @@
 }
 
 .post__user{
-  padding-top: 16px ;
+  padding-top: 17px ;
   padding-left: 18px ;
   padding-right: 20px ;
   margin: 0 ;
