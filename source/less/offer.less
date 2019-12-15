@@ -57,6 +57,12 @@
   top: -68px ;
 
   margin-bottom: -68px ;
+
+  @media (min-width: @tablet-width){
+    top: -110px ;
+
+    margin-bottom: -110px ;
+  }
 }
 
 .offer__slogan--short{
@@ -64,6 +70,17 @@
   padding-top: 98px ;
 
   background-position: top ;
+
+  @media (min-width: @tablet-width){
+    height: 440px ;
+    padding-top: 181px ;
+    padding-right: 90px ;
+    padding-left: 91px ;
+
+    font-size: 50px ;
+    line-height: 60px ;
+
+  }
 }
 
 .offer__header {
@@ -113,6 +130,8 @@ background-repeat: no-repeat;
   @media (min-width: @tablet-width){
     padding: 0 ;
     margin-top: 32px ;
+    margin-bottom: 0 ;
+
 
     font-size: 18px ;
   }
@@ -147,6 +166,9 @@ background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width){
+    width: 300px ;
+    margin: 0 ;
+
     background-color: transparent ;
   }
 }
@@ -169,10 +191,8 @@ background-repeat: no-repeat;
     width: 300px ;
     min-height: 245px ;
     margin: 0 ;
-  }
-
-  //background-color: rgba(60, 150, 215, 0.5);
-  }
+   }
+ }
 
 .offer__slogan--short{
   display: block;
@@ -183,17 +203,8 @@ background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .offer__button{
-    width: 300px ;
-    margin: 0 ;
-  }
-
   .offer__available-os{
     margin-bottom: 0 ;
-  }
-
-  .offer__slogan--short{
-    min-height: 330px ;
   }
 }
 
