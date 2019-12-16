@@ -4,6 +4,11 @@
   width: 100% ;
   height: auto;
   margin: 0 auto ;
+
+  @media (min-width: @tablet-width){
+    min-height: 455px ;
+    min-width: 300px ;
+  }
 }
 
 .post__day{
@@ -26,8 +31,11 @@
     color: @white ;
     letter-spacing: 0.03em ;
 
-
     background-color: @lipstick ;
+  }
+
+  @media (min-width: @tablet-width){
+    width: 660px ;
   }
 }
 
@@ -46,6 +54,12 @@
   margin: 0 auto;
 
   background-color: @gray;
+
+  @media (min-width: @tablet-width){
+    width: auto;
+    margin-left: 20px ;
+    margin-right: 20px ;
+  }
 }
 
 .post__user{
@@ -111,12 +125,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width){
-  .post{
-    min-height: 455px ;
-    min-width: 300px ;
-  }
-}
+
 
 @media (min-width: @desktop-width){
   .post{
