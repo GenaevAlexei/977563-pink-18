@@ -1,27 +1,33 @@
 .offer {
   position: relative;
+  top: -71px ;
 
-  //min-width: 320px ;
-  margin: 0 ;
+  margin-bottom: -71px ;
   padding: 0 ;
 
-  //text-align: center;
+  text-align: center;
 
-  //background-color: @very-dark ;
-  //border: 3px dotted green ;
-  //box-sizing: border-box;
+  background-color: @very-dark ;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width){
+    top: -112px ;
+
+    margin-bottom: -112px ;
+  }
 }
 
-/*.offer__slogan {
+.offer__slogan {
   display: block;
-  height: 395px ;
-  padding-top: 19px ;
+  min-height: 467px ;
+  padding-top: 93px ;
   padding-left: 40px  ;
   padding-right: 40px ;
   margin: 0 ;
 
   font-family: OpenSans-Light ;
   font-size: 24px ;
+  line-height: 29px ;
   color: #ffffff ;
   font-weight: 300 ;
 
@@ -30,14 +36,52 @@
   background-position: bottom ;
   background-color: @very-dark ;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width){
+    min-height: 730px ;
+    padding-top: 203px ;
+    padding-left: 76px ;
+    padding-right: 398px ;
+
+    font-size: 40px ;
+    line-height: 48px ;
+
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: top ;
   }
+}
+
+/*Для photo.html и form.html */
+.offer--short{
+  position: relative;
+  top: -68px ;
+
+  margin-bottom: -68px ;
+
+  @media (min-width: @tablet-width){
+    top: -110px ;
+
+    margin-bottom: -110px ;
+  }
+}
 
 .offer__slogan--short{
+  height: 239px ;
+  padding-top: 98px ;
+
   background-position: top ;
 
-  height: 237px ;
-  padding-top: 101px ;
-}*/
+  @media (min-width: @tablet-width){
+    height: 440px ;
+    padding-top: 181px ;
+    padding-right: 90px ;
+    padding-left: 91px ;
+
+    font-size: 50px ;
+    line-height: 60px ;
+
+  }
+}
 
 .offer__header {
  position: relative;
@@ -45,21 +89,30 @@
  min-height: 396px ;
 
  //для разметки:
- background-color: rgba(255, 0, 0, 0.5);
+ //background-color: rgba(255, 0, 0, 0.5);
 }
 
-/*.offer__image{
+.offer__image{
 position: absolute;
-top: 109px ;
+bottom: -28px ;
 
 width: 100% ;
 min-width: 320px;
-height: 314px;
+min-height: 314px;
 
 background-image: url(../img/iphone-hand-mobile@1x.png);
 background-repeat: no-repeat;
-background-color: rgba(255, 0, 0, 0.2);
-}*/
+//background-color: rgba(255, 0, 0, 0.2);
+
+ @media (min-width: @tablet-width){
+   bottom: 0 ;
+   right: 20px ;
+
+   min-height: 546px ;
+
+   background-image: url(../img/iphone-hand-tablet@1x.png);
+ }
+}
 
 .offer__available-os{
   display: block;
@@ -72,7 +125,16 @@ background-color: rgba(255, 0, 0, 0.2);
   color: #ffffff ;
   text-align: center;
 
-  background-color: rgba(153, 202, 60, 0.5);
+  //background-color: rgba(153, 202, 60, 0.5);
+
+  @media (min-width: @tablet-width){
+    padding: 0 ;
+    margin-top: 32px ;
+    margin-bottom: 0 ;
+
+
+    font-size: 18px ;
+  }
 }
 
 .offer__button{
@@ -80,9 +142,8 @@ background-color: rgba(255, 0, 0, 0.2);
   width: 281px ;
   height: 55px ;
   margin: 28px auto;
-  padding-top: 16px ;
+  padding-top: 14px ;
 
-  //для разметки
   font-family: OpenSans-Bold, Arial, sans-serif ;
   font-size: 18px ;
   color: #ffffff ;
@@ -90,28 +151,48 @@ background-color: rgba(255, 0, 0, 0.2);
   text-align: center;
   text-decoration: none;
 
-  background-color: rgba(238, 187, 66, 0.5);
-  //background-color: @very-dark ;
+  background-color: @very-dark ;
   border: 3px solid #ffffff ;
   border-radius:  26px ;
   box-sizing: border-box;
+
+  &:hover{
+    color: @lipstick ;
+    background-color: @white ;
   }
+  &:active{
+    color: @lipstick-transparent30 ;
+    background-color: @white ;
+  }
+
+  @media (min-width: @tablet-width){
+    width: 300px ;
+    margin: 0 ;
+
+    background-color: transparent ;
+  }
+}
 
 .offer__os-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 270px ;
+  min-height: 271px ;
   margin: 0 ;
 
-  background-color: rgba(60, 150, 215, 0.5);
-  }
+  @media (min-width: @tablet-width){
+    position: absolute;
+    top: 378px ;
+    left: 20px ;
 
-.offer__os-wrapper::before {
-  position: absolute;
-
-  content: ".offer__os-wrapper"
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px ;
+    min-height: 245px ;
+    margin: 0 ;
+   }
+ }
 
 .offer__slogan--short{
   display: block;
@@ -122,36 +203,8 @@ background-color: rgba(255, 0, 0, 0.2);
 }
 
 @media (min-width: @tablet-width) {
- .offer__header{
-   min-height: 618px ;
- }
-
- .offer__os-wrapper{
-   position: absolute;
-   top: 265px ;
-   left: 20px ;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 300px ;
-   min-height: 245px ;
-   margin: 0 ;
-
-   background-color: rgba(60, 150, 215, 0.5);
-  }
-
-  .offer__button{
-    width: 300px ;
-    margin: 0 ;
-  }
-
   .offer__available-os{
     margin-bottom: 0 ;
-  }
-
-  .offer__slogan--short{
-    min-height: 330px ;
   }
 }
 

@@ -1,22 +1,23 @@
 .main-nav{
-  min-height: 256px ;
+  position: relative;
+  z-index: 1 ;
+  min-height: 252px ;
+  padding: 0 ;
 
-  background-color: rgba(52, 183, 186, 0.5) ;
+  //background-color: rgba(52, 183, 186, 0.5) ;
+
+  @media (min-width: @desktop-width){
+      flex-basis:  620px ;
+      flex-grow: 0 ;
+      margin-right: 130px ;
+      min-height: 110px ;
+    }
 }
 
-@media (min-width: @tablet-width) {
-  min-height: 256px ;
+.main-nav--closed{
+  display: none ;
 }
 
-@media (min-width: @desktop-width){
-  .main-nav{
-    flex-basis:  620px ;
-    flex-grow: 0 ;
-    margin-right: 130px ;
-    min-height: 110px ;
-  }
-
-  .main-nav__toggle{
-    display: none ;
-  }
+.main-nav--nojs{
+  display: block;
 }

@@ -1,15 +1,42 @@
+.recent{
+  background-color: @white ;
+
+  @media (min-width: @tablet-width){
+
+  }
+}
+
 .recent__appeal{
   display: block;
   min-height: 184px ;
   margin: 0 ;
+  padding: 44px 35px ;
 
   font-family: OpenSans, Arial, sans-serif ;
   font-size: 14px ;
   line-height: 30px ;
-  color: #283645 ;
+  color: @dark ;
+  text-align: center ;
 
-  background-color: rgba(204, 220, 44, 0.5);
   box-sizing: border-box;
+
+  &--bottom{
+    padding: 22px 33px ;
+
+    @media (min-width: @tablet-width){
+      min-height: 174px ;
+     }
+   }
+
+  @media (min-width: @tablet-width){
+    padding-top: 92px ;
+    padding-left: 75px ;
+    padding-right: 75px ;
+    padding-bottom: 76px ;
+    min-height: 220px ;
+
+    font-size: 18px ;
+  }
 }
 
 .recent__list{
@@ -17,50 +44,35 @@
   padding: 0 ;
 
   list-style: none;
+
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .recent__item{
   margin-bottom: 20px ;
+  min-height: 300px ;
+
+  @media (min-width: @tablet-width){
+    margin-right: 0 ;
+    margin-left: 20px ;
+    margin-bottom: 20px ;
+  }
 }
 
 .recent__item--day{
-  width: 320px ;
+  @media (min-width: @tablet-width){
+    width: 100% ;
+    margin: 0 ;
+  }
 }
 
-@media (min-width: @tablet-width) {
- .recent__appeal{
-   min-height: 228px ;
- }
 
- .recent__appeal--bottom{
-  min-height: 174px ;
- }
 
- .recent__list{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-
-   background-color: rgba(236, 83, 68, 0.5);
- }
-
- .recent__photo--day{
-   width: 660px ;
-   min-height: 630px ;
- }
-
- .recent__item{
-   margin-right: 0 ;
-   margin-left: 20px ;
-   margin-bottom: 20px ;
- }
-
- .recent__item--day{
-   width: 100% ;
-   margin: 0 ;
-   margin-bottom: 48px ;
- }
-}
+// Для desktop:
 
 @media (min-width: @desktop-width) {
   .recent__appeal{
