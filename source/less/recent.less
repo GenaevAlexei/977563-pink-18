@@ -20,14 +20,6 @@
 
   box-sizing: border-box;
 
-  &--bottom{
-    padding: 22px 33px ;
-
-    @media (min-width: @tablet-width){
-      min-height: 174px ;
-     }
-   }
-
   @media (min-width: @tablet-width){
     padding-top: 92px ;
     padding-left: 75px ;
@@ -37,6 +29,24 @@
 
     font-size: 18px ;
   }
+
+  @media (min-width: @desktop-width){
+    padding-left: 310px ;
+    padding-right: 310px ;
+  }
+
+  &--bottom{
+    padding: 22px 33px ;
+
+    @media (min-width: @tablet-width){
+      min-height: 174px ;
+     }
+
+    @media (min-width: @desktop-width){
+      padding-left: 250px ;
+      padding-right: 250px ;
+     }
+   }
 }
 
 .recent__list{
