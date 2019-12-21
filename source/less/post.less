@@ -11,11 +11,9 @@
   }
 }
 
-.post__day{
-  &::before{
-    content: "Панорама дня";
-
+.post__marker-day{
     position: absolute;
+    top: -12px ;
     left: 160px ;
 
     padding-top: 6px ;
@@ -34,6 +32,7 @@
     background-color: @lipstick ;
   }
 
+.post__day{
   @media (min-width: @tablet-width){
     width: 660px ;
   }

@@ -11,11 +11,11 @@
     }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: flex;
     width: 1200px ;
     min-height: 412px ;
 
-    background-color: rgba(236, 232, 48, 0.5);
+    background-color: @gray ;
     }
   }
 
@@ -42,11 +42,32 @@
 
       font-family: OpenSans-Bold, Arial, sans-serif;
       font-size: 97px ;
+      line-height: 111px ;
       color: @lipstick ;
 
       border: 13px solid @lipstick ;
       border-radius: 50% ;
+
+      @media (min-width: @desktop-width){
+        top: 69px ;
+        left: 21px ;
+
+        padding-left: 41px ;
+        padding-top: 47px ;
+        width: 254px ;
+        height: 254px ;
+
+        font-size: 120px ;
+        line-height: 111px ;
+
+        border-width: 17px ;
+      }
     }
+  }
+
+  @media (min-width: @desktop-width){
+    margin-top: 0 ;
+    margin-left: 131px ;
   }
 }
 
@@ -59,6 +80,11 @@
       fill: #dedede ;
     }
   }
+
+  @media (min-width: @desktop-width){
+    width:  298px ;
+    height: 345px ;
+  }
 }
 
 .fake-news__text{
@@ -68,12 +94,19 @@
     padding-right: 20px ;
     box-sizing: border-box;
   }
+
+  @media (min-width: @desktop-width){
+    flex-basis: 526px ;
+    margin-top: 62px ;
+    margin-right: 178px ;
+    padding-right: 0 ;
+  }
 }
 
 .fake-news__title{
    @media (min-width: @tablet-width){
      margin: 0 ;
-     padding-top: 30px ;
+     padding-top: 29px ;
      padding-right: 140px ;
 
      font-family: OpenSans-Bold, Arial, sans-serif;
@@ -94,6 +127,14 @@
      line-height: 24px ;
      color: @dark ;
    }
+
+   @media (min-width: @desktop-width){
+     padding-top: 22px ;
+     padding-right: 0 ;
+
+     font-size: 18px ;
+     line-height: 30px ;
+   }
  }
 
 .fake-news__link{
@@ -105,5 +146,13 @@
      font-size: 14px ;
      line-height: 24px ;
      color: @lipstick ;
+   }
+
+   @media (min-width: @desktop-width){
+     padding-top: 19px ;
+     padding-right: 0 ;
+
+     font-size: 18px ;
+     line-height: 30px ;
    }
  }

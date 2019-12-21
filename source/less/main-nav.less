@@ -7,15 +7,21 @@
   //background-color: rgba(52, 183, 186, 0.5) ;
 
   @media (min-width: @desktop-width){
-      flex-basis:  620px ;
+      display: block ;
+
+      flex-basis:  630px ;
       flex-grow: 0 ;
-      margin-right: 130px ;
+      margin-right: 121px ;
       min-height: 110px ;
     }
 }
 
 .main-nav--closed{
   display: none ;
+
+  @media (min-width: @desktop-width){
+    display: block ;
+  }
 }
 
 .main-nav--nojs{
