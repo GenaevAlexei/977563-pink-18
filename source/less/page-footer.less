@@ -21,6 +21,10 @@
       display: flex;
     }
   }
+
+  @media (min-width: @desktop-width){
+    min-height: 225px ;
+  }
 }
 
 .page-footer__item{
@@ -83,5 +87,19 @@
   .page-footer{
     width: 1200px ;
     min-height: 200px ;
+  }
+}
+
+.page-footer__pink-logo{
+  @media (min-width: @desktop-width){
+    display: none ;
+  }
+}
+
+.page-footer__pink-logo--desktop{
+  display: none ;
+
+  @media (min-width: @desktop-width){
+    display: inline;
   }
 }
