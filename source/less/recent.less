@@ -1,9 +1,5 @@
 .recent{
   background-color: @white ;
-
-  @media (min-width: @tablet-width){
-
-  }
 }
 
 .recent__appeal{
@@ -20,14 +16,6 @@
 
   box-sizing: border-box;
 
-  &--bottom{
-    padding: 22px 33px ;
-
-    @media (min-width: @tablet-width){
-      min-height: 174px ;
-     }
-   }
-
   @media (min-width: @tablet-width){
     padding-top: 92px ;
     padding-left: 75px ;
@@ -37,6 +25,29 @@
 
     font-size: 18px ;
   }
+
+  @media (min-width: @desktop-width){
+    padding-left: 310px ;
+    padding-right: 310px ;
+    min-height: 240px ;
+  }
+
+  &--bottom{
+    padding: 22px 33px ;
+
+    @media (min-width: @tablet-width){
+      min-height: 174px ;
+      padding-top: 45px ;
+     }
+
+    @media (min-width: @desktop-width){
+      padding-top: 5px ;
+      padding-right: 250px ;
+      padding-bottom: 0 ;
+      padding-left: 250px ;
+      min-height: 131px ;
+     }
+   }
 }
 
 .recent__list{
@@ -61,46 +72,49 @@
     margin-left: 20px ;
     margin-bottom: 20px ;
   }
+
+  @media (min-width: @desktop-width){
+    margin-right: 10px ;
+    margin-left:  10px ;
+    margin-bottom: 54px ;
+  }
 }
 
 .recent__item--day{
   @media (min-width: @tablet-width){
     width: 100% ;
     margin: 0 ;
+    margin-bottom: 50px ;
+  }
+
+  @media (min-width: @desktop-width){
+    width: 100% ;
+    margin: 0 ;
+    margin-bottom: 49px ;
   }
 }
-
-
 
 // Для desktop:
 
 @media (min-width: @desktop-width) {
   .recent__appeal{
-    min-height: 240px ;
+
   }
 
-  .recent__appeal--bottom{
-   min-height: 185px ;
-  }
+
 
   .recent__list{
     justify-content: center;
   }
 
-  .recent__photo--day{
-    width: 1200px ;
-    min-height: 600px ;
-  }
+
 
   .recent__item{
-    margin-right: 10px ;
-    margin-left:  10px ;
-    margin-top: 52px ;
-    margin-bottom: 0px ;
+
+
   }
 
   .recent__item--day{
-    width: 100% ;
-    margin: 0 ;
+
   }
 }
