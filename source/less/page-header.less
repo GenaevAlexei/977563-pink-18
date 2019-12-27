@@ -35,15 +35,17 @@
   padding-top: 21px ;
   padding-left: 20px ;
 
+  color: @white ;
+
   @media (min-width: @tablet-width){
     min-height: 109px ;
     padding-top: 27px ;
 
-    &:hover path{
-      fill: @lipstick ;
+    &:hover {
+      color:  @lipstick ;
     }
-    &:active path{
-      fill: @white ;
+    &:active {
+      color: @white ;
       opacity: 0.3 ;
     }
   }
@@ -93,7 +95,7 @@
   border-bottom: 1px solid @black ;
 
   @media (min-width: @desktop-width){
-
+  background-color: transparent;
   }
 }
 

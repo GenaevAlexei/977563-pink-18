@@ -151,9 +151,9 @@
 
   @media (min-width: @desktop-width){
     width: 320px ;
-    min-height: 556px ;
+    //min-height: 556px ;
     margin: 0 ;
-    padding-top: 357px ;
+    padding-top: 0 ;
     box-sizing: border-box;
 
     text-align: center;
@@ -161,21 +161,41 @@
     background-position: top center;
 
     &:nth-child(1){
-      margin-left:  120px ;
-      padding-left: 41px ;
-
-      background-image: url(../img/iphone-screen-1-desktop@1x.png);
-      background-repeat: no-repeat;
-
-      @media (min-resolution: @retina-dppx){
-        background-image: url(../img/iphone-screen-1-desktop@2x.png);
-     }
-   }
+      margin-left:  123px ;
+      //padding-left: 41px ;
+    }
 
     &:nth-child(2){
-      margin-left: 3px ;
-      padding-left: 38px ;
+      margin-left: 0spx ;
+      //padding-left: 38px ;
+    }
 
+    &:nth-child(3){
+      margin-left: 0px ;
+      //padding-left: 38px ;
+    }
+  }
+}
+
+.advantages__screen{
+  @media (max-width: @mobile-tablet-width-only){
+    display: none;
+  }
+
+   width: 292px ;
+   height: 302px ;
+   margin-left: 13px ;
+   margin-bottom: 56px ;
+
+   background-image: url(../img/iphone-screen-1-desktop@1x.png);
+   background-repeat: no-repeat;
+   background-size:  cover;
+
+   @media (min-resolution: @retina-dppx){
+     background-image: url(../img/iphone-screen-1-desktop@2x.png);
+   }
+
+    &--two{
       background-image: url(../img/iphone-screen-2-desktop@1x.png);
       background-repeat: no-repeat;
 
@@ -184,10 +204,7 @@
       }
     }
 
-    &:nth-child(3){
-      margin-left: 0px ;
-      padding-left: 38px ;
-
+    &--three{
       background-image: url(../img/iphone-screen-3-desktop@1x.png);
       background-repeat: no-repeat;
 
@@ -196,7 +213,7 @@
       }
     }
   }
-}
+
 
 .advantages__title{
   margin: 0 ;
@@ -209,7 +226,7 @@
 
   @media (min-width: @desktop-width){
     width: 236px ;
-    padding-left: 1px ;
+    padding-left: 39px ;
 
     font-size: 30px ;
     line-height: 30px ;
@@ -236,6 +253,7 @@
   @media (min-width: @desktop-width){
     width: 238px ;
     padding-top: 24px ;
+    padding-left: 38px ;
 
     font-size: 18px ;
     line-height: 30px ;
@@ -250,6 +268,7 @@
   height: 278px ;
 
   background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-size: cover;
 
   @media (min-resolution: @retina-dppx){
     background-image: url(../img/iphone-screen-mobile@2x.png);

@@ -40,6 +40,7 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: bottom ;
+  background-size: cover;
   background-color: @very-dark ;
   box-sizing: border-box;
 
@@ -113,6 +114,8 @@
 
     font-size: 50px ;
     line-height: 60px ;
+
+    background-size: 1200px 729px;
   }
 
   @media (min-width: @desktop-width){
@@ -121,6 +124,9 @@
 
     font-size: 49px ;
     letter-spacing: 0.01em ;
+
+    background-size: 2560px 853px ;
+    background-position: top ;
   }
 }
 
@@ -146,14 +152,14 @@
 
 .offer__image{
 position: absolute;
-bottom: -28px ;
+bottom: 0px ;
 
-width: 100% ;
-min-width: 320px;
-min-height: 314px;
+width: 258px;
+height: 286px;
 
 background-image: url(../img/iphone-hand-mobile@1x.png);
 background-repeat: no-repeat;
+background-size: cover;
 
 @media (min-resolution: @retina-dppx){
   background-image: url(../img/iphone-hand-mobile@2x.png);
@@ -163,7 +169,8 @@ background-repeat: no-repeat;
    bottom: 0 ;
    right: 20px ;
 
-   min-height: 546px ;
+   width: 660px ;
+   height: 545px ;
 
    background-image: url(../img/iphone-hand-tablet@1x.png);
 
@@ -173,10 +180,11 @@ background-repeat: no-repeat;
  }
 
  @media (min-width: @desktop-width){
-   bottom: -1px ;
-   right: -146px ;
+   bottom: 0 ;
+   right: 4px ;
 
-   min-height: 645px ;
+   width: 1050px ;
+   height: 645px ;
 
    background-image: url(../img/iphone-hand-desktop@1x.png);
 
