@@ -23,7 +23,8 @@
   }
 
   @media (min-width: @desktop-width){
-    min-height: 225px ;
+    width: 1200px ;
+    min-height: 200px ;
   }
 }
 
@@ -70,23 +71,18 @@
 }
 
 .page-footer__logo-link{
-  &:hover .footer-pink-logo__letter{
-    fill: @lipstick ;
+  color: @dark ;
+
+  &:hover {
+    color: @lipstick ;
   }
 
-  &:active .footer-pink-logo__letter{
-    fill: @dark ;
+  &:active {
+    color: @dark ;
   }
 
   &:active{
     opacity: 0.3 ;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-footer{
-    width: 1200px ;
-    min-height: 200px ;
   }
 }
 
