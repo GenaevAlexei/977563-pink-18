@@ -4,34 +4,35 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper
                     page-header__logo-wrapper--closed
                     page-header__logo-wrapper--nojs">
           <a class="page-header__logo" title="Логотип Пинк">
-            <svg class="page-header__logo-image"  width="75" height="22">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-mobile">
+            <svg class="page-header__logo-image" width="75" height="22">
+              <use xlink:href="#logo-pink-white-mobile" fill="currentColor">
               </use>
             </svg>
-            <svg class="page-header__logo-glasses"  width="146.3px"
-             height="40.375px">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-tablet">
+            <svg class="page-header__logo-glasses" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-white-tablet" fill="currentColor">
               </use>
             </svg>
-            <svg class="page-header__logo-glasses page-header__logo-glasses--desktop"
-                 width="146.3px" height="40.375px">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-desktop">
+            <svg class="page-header__logo-glasses page-header__logo-glasses--desktop" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-white-desktop" fill="currentColor">
               </use>
             </svg>
           </a>
           <button class="page-header__toggle
                          page-header__toggle--closed
-                         page-header__toggle--nojs"
-                  type="button">
+                         page-header__toggle--nojs" type="button">
             Открыть меню
           </button>
         </div>
@@ -138,8 +139,7 @@
       </section>
       <section class="fake-news">
         <div class="fake-news__timer-wrapper">
-          <svg class="fake-news__timer" width="298px" height="345.097px"
-               viewBox="0 0 298 345.097">
+          <svg class="fake-news__timer" width="298px" height="345.097px" viewBox="0 0 298 345.097">
             <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,
             3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385
              C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,
@@ -150,7 +150,7 @@
               160.434,285.465,127.703,264.568,102.055z M149,306.264
               c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,
               85.93c60.843,0,110.167,49.323,110.167,110.167
-              S209.843,306.264,149,306.264z"/>
+              S209.843,306.264,149,306.264z"></path>
           </svg>
         </div>
         <div class="fake-news__text">
@@ -173,11 +173,10 @@
       <div class="page-footer__item">
         <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
           <svg class="page-footer__pink-logo" width="146.3px" height="40.375px">
-            <use xlink:href="img/svg-sprite.svg#logo-pink-blue-mobile"></use>
+            <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
           </svg>
-          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop"
-           width="146.3px" height="40.375px" >
-              <use xlink:href="img/svg-sprite.svg#logo-pink-blue-desktop"></use>
+          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
           </svg>
         </a>
       </div>
@@ -185,25 +184,22 @@
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Twitter">
-              <svg class="social-list__twitter-icon"
-               width="17.5px" height="14.663px" >
-                <use xlink:href="img/svg-sprite.svg#twitter-icon"></use>
+              <svg class="social-list__twitter-icon" width="17.5px" height="14.663px">
+                <use xlink:href="#icon-twitter" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Facebook">
-              <svg class="social-list__facebook-icon"
-               width="8.673px" height="18.944px">
-                  <use xlink:href="img/svg-sprite.svg#facebook-icon"></use>
+              <svg class="social-list__facebook-icon" width="8.673px" height="18.944px">
+                  <use xlink:href="#icon-facebook" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Youtube">
-              <svg class="social-list__youtube-icon"
-                width="14.64px" height="13.96px">
-                 <use xlink:href="img/svg-sprite.svg#youtube-icon"></use>
+              <svg class="social-list__youtube-icon" width="14.64px" height="13.96px">
+                 <use xlink:href="#icon-youtube" fill="currentColor"></use>
               </svg>
             </a>
           </li>
@@ -212,9 +208,8 @@
       <div class="page-footer__item copyright">
         <b class="copyright__text">Разработано</b>
         <a href="#" class="copyright__link" title="HTML Academy">
-          <svg class="copyright__logo"
-           width="26.943px" height="34.09px">
-           <use xlink:href="img/svg-sprite.svg#HtmlAcademy-icon"></use>
+          <svg class="copyright__logo" width="26.943px" height="34.09px">
+           <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
           </svg>
         </a>
       </div>
