@@ -297,20 +297,34 @@
         </p>
       </section>
       <section class="photo-editor">
-        <img class="photo-editor__image" width="280" height="374"
-         alt="Зимняя дорога">
-         <ul class="photo-editor__tools">
-           <li></li>
-           <li></li>
-           <li></li>
+        <img class="photo-editor__image"
+         src="img/photo-road-mobile@1x.jpg"
+         srcset="img/photo-road-mobile@2x.jpg 2x"
+         width="280" height="374" alt="Зимняя дорога">
+        <ul class="photo-editor__tools">
+           <li>
+             <svg class=""  width="48" height="48">
+               <use xlink:href="#icon-editor-crop"></use>
+             </svg>
+           </li>
+           <li>
+             <svg class=""  width="48" height="48">
+               <use xlink:href="#icon-editor-fill"></use>
+             </svg>
+           </li>
+           <li>
+             <svg class=""  width="31.92" height="31.92">
+               <use xlink:href="#icon-editor-contrast"></use>
+             </svg>
+           </li>
          </ul>
          <div class="photo-editor__band">
          </div>
          <div class="photo-editor__loader">
-            <button class="">
+            <button class="button button--editor-post">
                Запостить
             </button>
-            <button class="">
+            <button class="button button--editor-cancel">
                Отмена
             </button>
          </div>
@@ -319,10 +333,10 @@
     <footer class="page-footer">
       <div class="page-footer__item">
         <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
-          <svg class="page-footer__pink-logo" width="146.3px" height="40.375px">
+          <svg class="page-footer__pink-logo" width="146.3" height="40.375">
             <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
           </svg>
-          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3px" height="40.375px">
+          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3" height="40.375">
               <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
           </svg>
         </a>
@@ -331,21 +345,21 @@
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Twitter">
-              <svg class="social-list__twitter-icon" width="17.5px" height="14.663px">
+              <svg class="social-list__twitter-icon" width="17.5" height="14.663">
                 <use xlink:href="#icon-twitter" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Facebook">
-              <svg class="social-list__facebook-icon" width="8.673px" height="18.944px">
+              <svg class="social-list__facebook-icon" width="8.673" height="18.944">
                   <use xlink:href="#icon-facebook" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Youtube">
-              <svg class="social-list__youtube-icon" width="14.64px" height="13.96px">
+              <svg class="social-list__youtube-icon" width="14.64" height="13.96">
                  <use xlink:href="#icon-youtube" fill="currentColor"></use>
               </svg>
             </a>
@@ -355,7 +369,7 @@
       <div class="page-footer__item copyright">
         <b class="copyright__text">Разработано</b>
         <a href="#" class="copyright__link">
-          <svg class="copyright__logo" width="26.943px" height="34.09px">
+          <svg class="copyright__logo" width="26.943" height="34.09">
            <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
           </svg>
 
