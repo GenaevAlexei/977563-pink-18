@@ -1,0 +1,73 @@
+.button{
+  display: block;
+  width: 281px ;
+  height: 55px ;
+  margin: 28px auto;
+  padding-top: 14px ;
+
+  font-family: OpenSans-Bold, Arial, sans-serif ;
+  font-size: 18px ;
+  color: #ffffff ;
+  line-height: 18px ;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: @very-dark ;
+  border: 3px solid #ffffff ;
+  border-radius:  26px ;
+  box-sizing: border-box;
+
+  &:hover{
+    color: @lipstick ;
+    background-color: @white ;
+  }
+  &:active{
+    color: @lipstick-transparent30 ;
+    background-color: @white ;
+  }
+}
+
+.button--offer{
+  @media (min-width: @tablet-width){
+    width: 300px ;
+    margin: 0 ;
+
+    background-color: transparent ;
+  }
+
+  @media (min-width: @desktop-width){
+    font-size: 20px ;
+    line-height: 20px ;
+    letter-spacing: 0.03em ;
+  }
+}
+
+.button--editor-post{
+  color: @lipstick;
+
+  border-color: @lipstick;
+  background-color: @gray;
+}
+
+.button--editor-cancel{
+  color: @dark-gray;
+
+  border-color: @dark-gray;
+  background-color: @gray;
+}
+
+.button--form{
+  text-transform: uppercase;
+
+  border: none ;
+  border-radius: 0 ;
+  background-color: @green ;
+}
+
+.button--popup{
+  text-transform: uppercase;
+
+  border: none ;
+  border-radius: 0 ;
+  background-color: @green ;
+}

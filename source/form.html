@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-form">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrapper
@@ -14,15 +17,15 @@
                     page-header__logo-wrapper--nojs">
           <a class="page-header__logo" title="Логотип Пинк">
             <svg class="page-header__logo-image" width="75" height="22">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-mobile">
+              <use xlink:href="#logo-pink-white-mobile" fill="currentColor">
               </use>
             </svg>
             <svg class="page-header__logo-glasses" width="146.3px" height="40.375px">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-tablet">
+              <use xlink:href="#logo-pink-white-tablet" fill="currentColor">
               </use>
             </svg>
             <svg class="page-header__logo-glasses page-header__logo-glasses--desktop" width="146.3px" height="40.375px">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-white-desktop">
+              <use xlink:href="#logo-pink-white-desktop" fill="currentColor">
               </use>
             </svg>
           </a>
@@ -58,17 +61,98 @@
           путешествие с Пинк
         </h2>
       </div>
-      <section class="page-form">
+      <section class="contest-form">
+        <p class="contest-form__appeal">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз - 1000
+          миль на вашу бонусную карту!
+        </p>
+        <form class="contest-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="contest-form__name">
+            <label for="surname">Фамилия:</for>
+            <input id="surname" type="text" value="Укажите фамилию*">
+            <label for="name">Имя:</for>
+            <input id="name" type="text" value="Введите ваше имя*">
+            <label for="patronymic">Отчество:</for>
+            <input id="patronymic" type="text" value="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="contest-form__progress">
+            <legend>
+              Ваши безбашеные достижения в путешествии
+            </legend>
+            <input id="shark" type="checkbox" checked>
+            <label for="shark">Сделал селфи с акулой</label>
+            <input id="beach" type="checkbox" checked>
+            <label for="beach">Обгорел на пляже</label>
+            <input id="Chuck" type="checkbox">
+            <label for="Chuck">Видел Чака Норриса</label>
+            <input id="souvenir" type="checkbox">
+            <label for="souvenir">Накупил сувениров</label>
+            <input id="tower" type="checkbox" checked>
+            <label for="tower">Удержал башню</label>
+            <input id="hotel" type="checkbox">
+            <label for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="contest-form__number">
+            <label for="phone">Номер телефона</for>
+            <input id="phone" type="text" value="Укажите фамилию*">
+            <label for="mail">Адрес почты</for>
+            <input id="mail" type="text" value="Введите ваше имя*">
+          </fieldset>
+          <fieldset class="contest-form__app">
+            <legend>
+              С каким приложением путешествовали?
+            </legend>
+            <input type="radio" name="app"
+            value="Pink-iOS" id="iOS" checked>
+            <label for="iOS">Pink для iOS</label>
+            <input type="radio" name="app"
+            value="Pink-Android" id="Android">
+            <label for="Android">Pink на Android</label>
+            <input type="radio" name="app"
+            value="Windows-Phone" id="Windows">
+            <label for="Windows">Windows Phone</label>
+          </fieldset>
+          <div class="popup popup--form-accept">
+            <h3>Ваша заявка отправлена</h3>
+            <p>Спасибо за участие, ваша заявка
+            уже поступила к нам. В ближайшее
+            время мы рассмотрим её и
+            оповестим вас.</p>
+            <button class="button button--popup">
+              Закрыть окно
+            </button>
+          </div>
+          <div class="popup popup--form-error">
+            <h3>Что-то пошло не так!</h3>
+            <p>Проверьте поля, выделенные красным,
+            скорее всего вы забыли их заполнить</p>
+            <button class="button button--popup">
+              ok
+            </button>
+          </div>
+          <fieldset class="contest-form__effect">
+            <label for="effect">Опишите свои эмоции</label>
+            <textarea id="effect" rows="5">
+              Можно прям в красках, не
+              стесняясь в выражениях
+            </textarea>
+          </fieldset>
+          <input class="button button--form" type="submit" value="Отправить форму">
+          <p class="contest-form__note">
+            <span>*</span>-Обязательные поля
+          </p>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__item">
         <a href="#" class="page-footer__logo-link " title="Логотип Пинк">
           <svg class="page-footer__pink-logo" width="146.3px" height="40.375px">
-            <use xlink:href="img/svg-sprite.svg#logo-pink-blue-mobile"></use>
+            <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
           </svg>
           <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3px" height="40.375px">
-              <use xlink:href="img/svg-sprite.svg#logo-pink-blue-desktop"></use>
+              <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
           </svg>
         </a>
       </div>
@@ -77,21 +161,21 @@
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Twitter">
               <svg class="social-list__twitter-icon" width="17.5px" height="14.663px">
-                <use xlink:href="img/svg-sprite.svg#twitter-icon"></use>
+                <use xlink:href="#icon-twitter" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Facebook">
               <svg class="social-list__facebook-icon" width="8.673px" height="18.944px">
-                  <use xlink:href="img/svg-sprite.svg#facebook-icon"></use>
+                  <use xlink:href="#icon-facebook" fill="currentColor"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="#" title="Youtube">
               <svg class="social-list__youtube-icon" width="14.64px" height="13.96px">
-                 <use xlink:href="img/svg-sprite.svg#youtube-icon"></use>
+                 <use xlink:href="#icon-youtube" fill="currentColor"></use>
               </svg>
             </a>
           </li>
@@ -101,7 +185,7 @@
         <b class="copyright__text">Разработано</b>
         <a href="#" class="copyright__link" title="HTML Academy">
           <svg class="copyright__logo" width="26.943px" height="34.09px">
-           <use xlink:href="img/svg-sprite.svg#HtmlAcademy-icon"></use>
+           <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
           </svg>
         </a>
       </div>
