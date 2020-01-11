@@ -3,8 +3,22 @@
   min-height: 757px;
 
   background-color: @gray;
+
+  @media(min-width: @tablet-width){
+    display: flex;
+    align-items: center;
+    width: 660px;
+    min-height: 511px;
+  }
 }
 
 .photo-editor__tools{
   list-style: none;
+}
+
+.photo-editor__tools-wrapper{
+  @media(min-width: @tablet-width){
+    display: flex;
+    flex-direction: column;
+  }
 }
