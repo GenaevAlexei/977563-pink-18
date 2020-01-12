@@ -4,6 +4,17 @@
   background-color: rgba(255, 0, 0, 0.5);
 }
 
+.contest-form__list{
+  margin: 0 ;
+  padding: 0 ;
+  list-style: none;
+
+  @media(min-width: @tablet-width){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .contest-form__appeal{
   width: 320px ;
   min-height: 179px;
@@ -15,10 +26,17 @@
   color: @dark;
 
   background-color: @white ;
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+    min-height: 253px;
+  }
 }
 
 .contest-form__name{
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 
   background-color: @white ;
   border:  none ;
@@ -39,14 +57,38 @@
     color: @very-dark;
 
     border: 2px solid @dark-gray;
+
+    @media(min-width: @tablet-width){
+    flex-grow: 1;
+    }
+  }
+
+  & li{
+    @media(min-width: @tablet-width){
+    display: flex;
+    justify-content: space-between;
+    }
   }
 
   & ul{
+    width: 320px;
+    min-height: 360px;
+    height: 100%;
     margin: 0;
     padding: 0;
 
     list-style: none;
+
+    @media(min-width: @tablet-width){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 660px;
+    min-height: 293px;
+    }
   }
+
+
 }
 
 .contest-form__progress{
@@ -80,10 +122,17 @@
 
     list-style: none;
   }
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+  }
 }
 
 .contest-form__number{
+  width: 320px;
+  min-height: 287px;
   margin: 0;
+  box-sizing: border-box;
 
   background-color: @white ;
   border: none;
@@ -111,6 +160,10 @@
     padding: 0;
 
     list-style: none;
+  }
+
+  @media(min-width: @tablet-width){
+    width: 660px;
   }
 }
 
@@ -145,12 +198,17 @@
 
     list-style: none;
   }
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+  }
 }
 
 .contest-form__effect{
   width: 320px;
   min-height: 321px;
   padding-left: 20px;
+  box-sizing: border-box;
 
   background-color: @white ;
 
@@ -162,11 +220,57 @@
 
     resize: none;
   }
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+  }
 }
 
 .contest-form__note{
   text-transform: uppercase;
   & span{
     color: @lipstick;
+  }
+}
+
+.contest-form__item--name{
+  @media(min-width: @tablet-width){
+    order: 1;
+  }
+}
+
+.contest-form__item--progress{
+  @media(min-width: @tablet-width){
+    order: 4;
+  }
+}
+
+.contest-form__item--number{
+  @media(min-width: @tablet-width){
+    order: 3;
+  }
+}
+
+.contest-form__item--app{
+  @media(min-width: @tablet-width){
+    order: 2;
+  }
+}
+
+.contest-form__item--popup{
+  @media(min-width: @tablet-width){
+    order: ;
+  }
+}
+
+.contest-form__item--effect{
+  @media(min-width: @tablet-width){
+    order: 5;
+  }
+}
+
+.contest-form__item--submit{
+  @media(min-width: @tablet-width){
+    order: 6;
   }
 }
