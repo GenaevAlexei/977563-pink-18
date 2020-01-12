@@ -68,81 +68,133 @@
           миль на вашу бонусную карту!
         </p>
         <form class="contest-form__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="contest-form__name">
-            <label for="surname">Фамилия:</for>
-            <input id="surname" type="text" value="Укажите фамилию*">
-            <label for="name">Имя:</for>
-            <input id="name" type="text" value="Введите ваше имя*">
-            <label for="patronymic">Отчество:</for>
-            <input id="patronymic" type="text" value="Ну и отчество тоже">
-          </fieldset>
-          <fieldset class="contest-form__progress">
-            <legend>
-              Ваши безбашеные достижения в путешествии
-            </legend>
-            <input id="shark" type="checkbox" checked>
-            <label for="shark">Сделал селфи с акулой</label>
-            <input id="beach" type="checkbox" checked>
-            <label for="beach">Обгорел на пляже</label>
-            <input id="Chuck" type="checkbox">
-            <label for="Chuck">Видел Чака Норриса</label>
-            <input id="souvenir" type="checkbox">
-            <label for="souvenir">Накупил сувениров</label>
-            <input id="tower" type="checkbox" checked>
-            <label for="tower">Удержал башню</label>
-            <input id="hotel" type="checkbox">
-            <label for="hotel">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="contest-form__number">
-            <label for="phone">Номер телефона</for>
-            <input id="phone" type="text" value="Укажите фамилию*">
-            <label for="mail">Адрес почты</for>
-            <input id="mail" type="text" value="Введите ваше имя*">
-          </fieldset>
-          <fieldset class="contest-form__app">
-            <legend>
-              С каким приложением путешествовали?
-            </legend>
-            <input type="radio" name="app"
-            value="Pink-iOS" id="iOS" checked>
-            <label for="iOS">Pink для iOS</label>
-            <input type="radio" name="app"
-            value="Pink-Android" id="Android">
-            <label for="Android">Pink на Android</label>
-            <input type="radio" name="app"
-            value="Windows-Phone" id="Windows">
-            <label for="Windows">Windows Phone</label>
-          </fieldset>
-          <div class="popup popup--form-accept">
-            <h3>Ваша заявка отправлена</h3>
-            <p>Спасибо за участие, ваша заявка
-            уже поступила к нам. В ближайшее
-            время мы рассмотрим её и
-            оповестим вас.</p>
-            <button class="button button--popup">
-              Закрыть окно
-            </button>
-          </div>
-          <div class="popup popup--form-error">
-            <h3>Что-то пошло не так!</h3>
-            <p>Проверьте поля, выделенные красным,
-            скорее всего вы забыли их заполнить</p>
-            <button class="button button--popup">
-              ok
-            </button>
-          </div>
-          <fieldset class="contest-form__effect">
-            <label for="effect">Опишите свои эмоции</label>
-            <textarea id="effect" rows="5">
-              Можно прям в красках, не
-              стесняясь в выражениях
-            </textarea>
-          </fieldset>
-          <input class="button button--form" type="submit" value="Отправить форму">
-          <p class="contest-form__note">
-            <span>*</span>-Обязательные поля
-          </p>
+          <ul class="contest-form__list">
+            <li class="contest-form__item contest-form__item--name">
+              <fieldset class="contest-form__name">
+                <ul>
+                  <li>
+                    <label for="surname">Фамилия:</label>
+                    <input id="surname" type="text" placeholder="Укажите фамилию*">
+                  </li>
+                  <li>
+                    <label for="name">Имя:</label>
+                    <input id="name" type="text" placeholder="Введите ваше имя*">
+                  </li>
+                  <li>
+                    <label for="patronymic">Отчество:</label>
+                    <input id="patronymic" type="text" placeholder="Ну и отчество тоже">
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="contest-form__item contest-form__item--progress">
+              <fieldset class="contest-form__progress">
+                <legend>
+                  Ваши безбашеные<br>
+                  достижения в путешествии
+                </legend>
+                <ul>
+                  <li>
+                    <input id="shark" type="checkbox" checked>
+                    <label for="shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li>
+                    <input id="beach" type="checkbox" checked>
+                    <label for="beach">Обгорел на пляже</label>
+                  </li>
+                  <li>
+                    <input id="Chuck" type="checkbox">
+                    <label for="Chuck">Видел Чака Норриса</label>
+                  </li>
+                  <li>
+                    <input id="souvenir" type="checkbox">
+                    <label for="souvenir">Накупил сувениров</label>
+                  </li>
+                  <li>
+                    <input id="tower" type="checkbox" checked>
+                    <label for="tower">Удержал башню</label>
+                  </li>
+                  <li>
+                    <input id="hotel" type="checkbox">
+                    <label for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="contest-form__item contest-form__item--number">
+              <fieldset class="contest-form__number">
+                <ul>
+                  <li>
+                    <label for="phone">Номер телефона</label>
+                    <input id="phone" type="text" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li>
+                    <label for="mail">Адрес почты</label>
+                    <input id="mail" type="text" placeholder="Введите почту*">
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="contest-form__item contest-form__item--app">
+              <fieldset class="contest-form__app">
+                <legend>
+                  С каким приложением путешествовали?
+                </legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="app"
+                    value="Pink-iOS" id="iOS" checked>
+                    <label for="iOS">Pink для iOS</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="app"
+                    value="Pink-Android" id="Android">
+                    <label for="Android">Pink на Android</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="app"
+                    value="Windows-Phone" id="Windows">
+                    <label for="Windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </li>
+            <li class="contest-form__item contest-form__item--popup">
+              <div class="popup popup--form-accept popup--hidden">
+                <h3>Ваша заявка отправлена</h3>
+                <p>Спасибо за участие, ваша заявка
+                уже поступила к нам. В ближайшее
+                время мы рассмотрим её и
+                оповестим вас.</p>
+                <button class="button button--popup">
+                  Закрыть окно
+                </button>
+              </div>
+            </li>
+            <li class="contest-form__item contest-form__item--effect">
+              <div class="contest-form__effect">
+                <label for="effect">Опишите свои эмоции</label>
+                <textarea id="effect" rows="5" placeholder="qdqweq">
+                  Можно прям в красках, не стесняясь в выражениях.
+                </textarea>
+              </div>
+            </li>
+            <li class="contest-form__item contest-form__item--submit">
+              <input class="button button--form" type="submit" value="Отправить форму">
+              <p class="contest-form__note">
+                <span>*</span>-Обязательные поля
+              </p>
+            </li>
+          </ul>
         </form>
+        <div class="popup popup--form-error popup--hidden">
+          <h3>Что-то пошло не так!</h3>
+          <p>Проверьте поля, выделенные красным,
+          скорее всего вы забыли их заполнить</p>
+          <button class="button button--popup">
+            ok
+          </button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

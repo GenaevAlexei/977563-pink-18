@@ -1,8 +1,22 @@
 .product{
-  background-color: green ;
+  width: 320px;
+  min-height: 472px;
+
+  background-color: @gray ;
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 1200px;
+    min-height: 524px;
+  }
 }
 
 .product__list{
+  margin: 0 ;
+
   list-style: none;
 }
 

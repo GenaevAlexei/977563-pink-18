@@ -6,13 +6,33 @@
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+    min-height: 779px;
+
+    background-image: url(../img/bg-map-tablet@1x.jpg);
+    background-position-y: 58px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 1200px;
+    min-height: 868px;
+
+    background-image: url(../img/bg-map-desktop@1x.jpg);
+    background-position-y: 90px;
+  }
 }
 
 .contacts__list{
+  min-height: 412px ;
+  margin: 0;
+
   color: @dark ;
   font-family: OpenSans, Arial, sans-serif;
 
   list-style: none;
+  background-color: @white ;
 }
 
 .contacts__item{
