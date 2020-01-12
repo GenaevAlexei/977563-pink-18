@@ -1,7 +1,49 @@
 .checks-slider{
-  width: 62px ;
-  display: flex;
-  justify-content: space-between;
+  box-sizing: border-box;
 
   background-color: rgba(34, 164, 228, 0.5);
+}
+
+.checks-slider__controls{
+  margin-left: 132px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  height: 12px;
+
+  background-color: #fb9cc2;
+}
+
+.checks-slider__control-item{
+  position: relative;
+
+  &::after{
+    content: "";
+
+    position: absolute;
+    z-index: 10;
+    top: 3px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: @dark-gray;
+    border-radius: 50%;
+  }
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    z-index: 10;
+    left: -3px ;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: transparent;
+    border: 3px solid @dark;
+    border-radius: 50%;
+  }
 }

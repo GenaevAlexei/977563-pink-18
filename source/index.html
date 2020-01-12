@@ -171,7 +171,9 @@
       <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
-            <b class="reviews__username">Николай Петров</b>
+            <p class="reviews__username">
+              <b>Николай Петров</b>
+            </p>
             <p class="reviews__description">
               «Это приложение перевернуло мой мир и
                позволило по-новому взглянуть на
@@ -181,11 +183,24 @@
             </p>
           </li>
         </ul>
-        <ul class="checks-slider">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div class="checks-slider">
+          <div class="checks-slider__inputs visually-hidden">
+            <input id="slide-1" type="radio" name="toggle">
+            <input id="slide-2" type="radio" name="toggle">
+            <input id="slide-3" type="radio" name="toggle">
+          </div>
+          <div class="checks-slider__controls">
+            <label class="checks-slider__control-item"
+             for="slide-1">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-2">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-3">
+            </label>
+          </div>
+        </div>
       </section>
       <section class="product">
         <ul class="product__list">
@@ -275,6 +290,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <Sscript src="js/script.js"></script>
   </body>
 </html>
