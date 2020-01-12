@@ -2,6 +2,11 @@
   font-family: OpenSans, Arial, sans-serif;
   //временно для разметки:
   background-color: rgba(255, 0, 0, 0.5);
+
+  @media(min-width: @desktop-width){
+    width: 940px;
+    margin: auto;
+  }
 }
 
 .contest-form__list{
@@ -12,6 +17,13 @@
   @media(min-width: @tablet-width){
     display: flex;
     flex-direction: column;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 
@@ -30,6 +42,10 @@
   @media(min-width: @tablet-width){
     width: 660px;
     min-height: 253px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
   }
 }
 
@@ -73,7 +89,6 @@
   & ul{
     width: 320px;
     min-height: 360px;
-    height: 100%;
     margin: 0;
     padding: 0;
 
@@ -86,9 +101,12 @@
     width: 660px;
     min-height: 293px;
     }
+
+    @media(min-width: @desktop-width){
+      width: 435px;
+      min-height: 295px;
+    }
   }
-
-
 }
 
 .contest-form__progress{
@@ -125,6 +143,10 @@
 
   @media(min-width: @tablet-width){
     width: 660px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
   }
 }
 
@@ -165,6 +187,10 @@
   @media(min-width: @tablet-width){
     width: 660px;
   }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
+  }
 }
 
 .contest-form__app{
@@ -202,6 +228,12 @@
   @media(min-width: @tablet-width){
     width: 660px;
   }
+
+  @media(min-width: @desktop-width){
+    width: 435px;
+    min-height: 310px;
+    margin-left: 70px;
+  }
 }
 
 .contest-form__effect{
@@ -224,6 +256,10 @@
   @media(min-width: @tablet-width){
     width: 660px;
   }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
+  }
 }
 
 .contest-form__note{
@@ -231,6 +267,11 @@
   & span{
     color: @lipstick;
   }
+}
+
+.contest-form__item{
+  margin: 0 ;
+  padding: 0 ;
 }
 
 .contest-form__item--name{
@@ -271,6 +312,7 @@
 
 .contest-form__item--submit{
   @media(min-width: @tablet-width){
+    display: flex;
     order: 6;
   }
 }
