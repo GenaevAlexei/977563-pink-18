@@ -1,8 +1,13 @@
 .product{
+  position: relative;
+
   width: 320px;
   min-height: 472px;
+  padding-top: 90px;
+  box-sizing: border-box;
 
   background-color: @gray ;
+  overflow: hidden;
 
   @media(min-width: @tablet-width){
     width: 660px;
@@ -15,21 +20,76 @@
 }
 
 .product__list{
-  margin: 0 ;
+  position: relative;
+  left: -534px;
 
-  list-style: none;
+  width: 1112px ;
+  margin: 0 ;
+  margin-bottom: 40px;
 }
 
 .product__name{
+  position: relative;
+
+  width: 280px;
+  height: 98px;
+
   font-family: OpenSans-Bold, Arial, sans-serif;
   color: @white ;
 
   background-color: @dark ;
+
+  & b{
+    text-transform: uppercase;
+  }
+
+  &--invisible{
+    background-color: transparent;
+    border: none;
+  }
+
+  &--hit::before{
+    content: url("../img/bg-hit.svg");
+
+    position: absolute;
+    top: 0;
+    left: -1px;
+  }
+
+  &--hit::after{
+    content: "ХИТ";
+
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    transform: rotate(-45deg);
+
+    font-family: OpenSans-Light, Arial, sans-serif;
+    font-size: 16px ;
+    text-transform: uppercase;
+  }
+}
+
+.product__usd{
+  font-family: OpenSans-Light, Arial, sans-serif;
 }
 
 .product__option{
+  height: 60px;
+  padding-left: 22px;
+  padding-right: 20px;
+
   font-family: OpenSans, Arial, sans-serif;
   color: @dark ;
 
   background-color: @white ;
+}
+
+.product__option--wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__marker{
+
 }
