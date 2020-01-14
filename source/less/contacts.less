@@ -1,4 +1,5 @@
 .contacts{
+  position: relative;
   width: 320px;
   min-height: 612px;
 
@@ -22,25 +23,90 @@
     background-image: url(../img/bg-map-desktop@1x.jpg);
     background-position-y: 90px;
   }
+
+  &::before{
+    content: "";
+
+    position: absolute;
+    top: 506px;
+    left: 142px;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    background-color: @white;
+  }
+
+  &::after{
+    content: "";
+
+    position: absolute;
+    top: 517px;
+    left: 153px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    background-color: @lipstick;
+  }
 }
 
 .contacts__list{
+  position: relative;
+
   min-height: 412px ;
   margin: 0;
+  padding: 20px;
+  padding-top: 41px;
+  box-sizing: border-box;
 
   color: @dark ;
   font-family: OpenSans, Arial, sans-serif;
 
   list-style: none;
   background-color: @white ;
+
+  &::before{
+    content: url("../img/bg-triangle-white-footer.svg");
+
+    position: absolute;
+    z-index: 10;
+    top: 383px;
+    left: -137px;
+  }
 }
 
 .contacts__item{
+  font-family: OpenSans-light, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
   color: @lipstick;
+  text-align: center;
 
   background-color: @white;
 
-  &--appeal, b{
+  &--appeal {
+    margin-bottom: 28px;
+
+    color: @dark;
+  }
+
+  &--tel{
+    margin-bottom: 16px;
+
+    line-height: 28px;
+  }
+
+  &--mail{
+    margin-bottom: 17px;
+    padding-left: 6px;
+  }
+
+  & b{
+    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-size: 18px;
     color: @dark;
   }
 }

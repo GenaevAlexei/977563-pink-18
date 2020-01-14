@@ -1,8 +1,18 @@
 .reviews{
+  position: relative;
   width: 320px ;
   min-height: 352px ;
 
   background-color: @white ;
+
+  &::before{
+    content: url("../img/bg-triangle-white.svg");
+
+    position: absolute;
+    z-index: 10;
+    top: 352px;
+    left: -869px;
+  }
 
   @media(min-width: @tablet-width){
     width: 660px;
