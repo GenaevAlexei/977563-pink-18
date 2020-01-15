@@ -1,4 +1,7 @@
 .checks-slider{
+  padding-top: 1px;
+  padding-right: 6px;
+
   box-sizing: border-box;
 }
 
@@ -9,6 +12,10 @@
   justify-content: space-between;
   width: 50px;
   height: 12px;
+
+  @media(min-width: @tablet-width){
+    margin: auto;
+  }
 }
 
 .checks-slider__control-item{
