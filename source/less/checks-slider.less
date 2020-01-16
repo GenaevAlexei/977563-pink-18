@@ -21,7 +21,7 @@
 .checks-slider__control-item{
   position: relative;
 
-  &::after{
+  &::before{
     content: "";
 
     position: absolute;
@@ -35,7 +35,7 @@
     border-radius: 50%;
   }
 
-  &::before{
+  &::after{
     content: "";
 
     position: absolute;
@@ -45,7 +45,7 @@
     width: 6px;
     height: 6px;
 
-    background-color: transparent;
+    background-color: @white;
     border: 3px solid @dark;
     border-radius: 50%;
   }
