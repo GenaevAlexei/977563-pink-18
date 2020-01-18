@@ -11,6 +11,8 @@
 
   @media(min-width: @tablet-width){
     width: 660px;
+    min-height: 376px;
+    padding-top: 86px;
   }
 
   @media(min-width: @desktop-width){
@@ -28,7 +30,8 @@
   margin-bottom: 41px;
 
   @media(min-width: @tablet-width){
-    width: 620px;
+    //width: 620px;
+    width: auto;
     position: static;
     margin: auto;
     margin-bottom: 41px;
@@ -64,6 +67,12 @@
     position: absolute;
     top: 0;
     left: -2px;
+
+    @media(min-width: @tablet-width){
+      content: url("../img/bg-hit-tablet.svg");
+
+      left: 0px;
+    }
   }
 
   &--hit::after{
@@ -77,11 +86,21 @@
     font-family: OpenSans-Light, Arial, sans-serif;
     font-size: 14px ;
     text-transform: uppercase;
+
+    @media(min-width: @tablet-width){
+      top: 8px;
+      left: 8px;
+    }
   }
 
   @media(min-width: @tablet-width){
-    width: 154px;
-    font-size: 12px;
+    width: 152px;
+    height: 77px;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -91,7 +110,8 @@
   line-height: 30px;
 
   @media(min-width: @tablet-width){
-    font-size: 12px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -109,12 +129,24 @@
   background-color: @white ;
 
     @media(min-width: @tablet-width){
-    font-size: 12px;
+    height: 43px;
+
+    font-size: 14px;
+    text-transform: none;
+    text-align: left;
+  }
+}
+
+.product__option--first{
+  @media(min-width: @tablet-width){
+    padding-left: 14px;
   }
 }
 
 .product__option:nth-child(1n+2){
-  font-size: 0;
+  @media(min-width: @tablet-width){
+    font-size: 0;
+  }
 }
 
 .product__option--wrapper{
@@ -134,5 +166,16 @@
 
   &--yes{
     margin-top: 4px;
+  }
+
+  @media(min-width: @tablet-width){
+    &--no{
+      margin-top: 2px;
+      margin-right: 4px;
+    }
+
+    &--yes{
+      margin-top: 5px;
+    }
   }
 }

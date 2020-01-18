@@ -211,26 +211,26 @@
             <td class="product__name product__name--invisible">
             </td>
             <td class="product__name">
-                <b>Стандарт</b><br>
-                <span class="product__usd">3,99 USD</span>
+                <b>База</b><br>
+                <span class="product__usd">1,99 USD</span>
             </td>
             <td class="product__name product__name--hit">
                 <b>Стандарт</b><br>
                 <span class="product__usd">3,99 USD</span>
             </td>
             <td class="product__name">
-                <b>Стандарт</b><br>
-                <span class="product__usd">3,99 USD</span>
+                <b>Анлим</b><br>
+                <span class="product__usd">9,99 USD</span>
             </td>
           </tr>
           <tr>
-            <td class="product__option">
+            <td class="product__option product__option--first">
               Розовый фильтр
             </td>
             <td class="product__option">
               <div class="product__option--wrapper">
                 Розовый фильтр
-                <svg class="product__marker" width="31" height="21">
+                <svg class="product__marker product__marker--yes" width="31" height="21">
                   <use xlink:href="#icon-yes" fill="#3dc644">
                   </use>
                 </svg>
@@ -248,7 +248,7 @@
             <td class="product__option">
               <div class="product__option--wrapper">
                 Розовый фильтр
-                <svg class="product__marker" width="31" height="21">
+                <svg class="product__marker product__marker--yes" width="31" height="21">
                   <use xlink:href="#icon-yes" fill="#3dc644">
                   </use>
                 </svg>
@@ -256,14 +256,14 @@
             </td>
           </tr>
           <tr>
-            <td class="product__option">
+            <td class="product__option product__option--first">
               Смайлики
             </td>
             <td class="product__option">
               <div class="product__option--wrapper">
                 Смайлики
-                <svg class="product__marker" width="31" height="21">
-                  <use xlink:href="#icon-yes" fill="#3dc644">
+                <svg class="product__marker product__marker--no" width="27" height="26">
+                  <use xlink:href="#icon-no" fill="#f25b26">
                   </use>
                 </svg>
               </div>
@@ -280,7 +280,7 @@
             <td class="product__option">
               <div class="product__option--wrapper">
                 Смайлики
-                <svg class="product__marker" width="31" height="21">
+                <svg class="product__marker product__marker--yes" width="31" height="21">
                   <use xlink:href="#icon-yes" fill="#3dc644">
                   </use>
                 </svg>
@@ -288,13 +288,13 @@
             </td>
           </tr>
           <tr>
-            <td class="product__option product__option--no">
+            <td class="product__option product__option--first">
               Комментарии
             </td>
             <td class="product__option product__option--no">
               <div class="product__option--wrapper">
                 Комментарии
-                <svg class="product__marker" width="27" height="26">
+                <svg class="product__marker product__marker--no" width="27" height="26">
                   <use xlink:href="#icon-no" fill="#f25b26">
                   </use>
                 </svg>
@@ -309,18 +309,18 @@
                 </svg>
               </div>
             </td>
-            <td class="product__option product__option--no">
+            <td class="product__option product__option--yes">
               <div class="product__option--wrapper">
                 Комментарии
-                <svg class="product__marker" width="27" height="26">
-                  <use xlink:href="#icon-no" fill="#f25b26">
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
                   </use>
                 </svg>
               </div>
             </td>
           </tr>
         </table>
-        <div class="checks-slider">
+        <div class="checks-slider checks-slider--product">
           <div class="checks-slider__inputs visually-hidden">
             <input id="slide-1" type="radio" name="toggle">
             <input id="slide-2" type="radio" name="toggle">
@@ -348,21 +348,28 @@
                Свяжитесь с нами!
             </li>
             <li class="contacts__item contacts__item--tel">
-              <b>Звоните:</b><br>
+              <b>Звоните:</b>
               <span>
                 +7 (812) 555-66-66
               </span>
             </li>
             <li class="contacts__item contacts__item--mail">
-              <b>Пишите:</b><br>
+              <b>Пишите:</b>
+              <span>
               mail@htmlacademy.ru
+              </span>
             </li>
-            <li class="contacts__item">
-              <b>Приезжайте в гости:</b><br>
+            <li class="contacts__item contacts__item--address">
+              <b>Приезжайте в гости:</b>
+              <span>
               ул. Большая <br>
               Конюшенная, 19/8
+              </span>
             </li>
         </ul>
+        <svg class="contacts__triangle" width="1200px" height="140px">
+          <use xlink:href="#bg-triangle-white-footer"></use>
+        </svg>
       </section>
       <div class="page-footer__logos-wrapper
       page-footer__logos-wrapper--index">
