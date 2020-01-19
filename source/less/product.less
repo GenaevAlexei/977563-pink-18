@@ -18,6 +18,7 @@
   @media(min-width: @desktop-width){
     width: 1200px;
     min-height: 524px;
+    padding-top: 146px;
   }
 }
 
@@ -57,40 +58,7 @@
   }
 
   &--invisible{
-    background-color: transparent;
-    border: none;
-  }
-
-  &--hit::before{
-    content: url("../img/bg-hit.svg");
-
-    position: absolute;
-    top: 0;
-    left: -2px;
-
-    @media(min-width: @tablet-width){
-      content: url("../img/bg-hit-tablet.svg");
-
-      left: 0px;
-    }
-  }
-
-  &--hit::after{
-    content: "ХИТ";
-
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    transform: rotate(-45deg);
-
-    font-family: OpenSans-Light, Arial, sans-serif;
-    font-size: 14px ;
-    text-transform: uppercase;
-
-    @media(min-width: @tablet-width){
-      top: 8px;
-      left: 8px;
-    }
+    visibility: hidden;
   }
 
   @media(min-width: @tablet-width){
@@ -102,6 +70,59 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media(min-width: @desktop-width){
+    width: 232px;
+    height: 98px;
+    padding-top: 0px;
+
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+.product__name--hit::before{
+  content: url("../img/bg-hit.svg");
+
+  position: absolute;
+  top: 0;
+  left: -2px;
+
+  @media(min-width: @tablet-width){
+    content: url("../img/bg-hit-tablet.svg");
+
+    left: 0px;
+  }
+
+  @media(min-width: @desktop-width){
+    content: url("../img/bg-hit.svg");
+  }
+}
+
+.product__name--hit::after{
+  content: "ХИТ";
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-45deg);
+
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 14px ;
+  text-transform: uppercase;
+
+  @media(min-width: @tablet-width){
+    top:  8px;
+    left: 8px;
+  }
+
+  @media(min-width: @desktop-width){
+    top: 11px;
+    left: 12px;
+
+    font-size: 14px ;
+    letter-spacing: 0.01em;
+  }
 }
 
 .product__usd{
@@ -111,6 +132,11 @@
 
   @media(min-width: @tablet-width){
     font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media(min-width: @desktop-width){
+    font-size: 24px;
     line-height: 30px;
   }
 }
@@ -135,11 +161,23 @@
     text-transform: none;
     text-align: left;
   }
+
+  @media(min-width: @desktop-width){
+    height: 56px;
+  }
 }
 
 .product__option--first{
   @media(min-width: @tablet-width){
     padding-left: 14px;
+  }
+
+  @media(min-width: @desktop-width){
+    padding-top: 0px;
+    padding-left: 18px;
+
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -176,6 +214,18 @@
 
     &--yes{
       margin-top: 5px;
+    }
+  }
+
+  @media(min-width: @desktop-width){
+    &--no{
+      margin-top: 2px;
+      margin-right: 6px;
+    }
+
+    &--yes{
+      margin-top: 5px;
+      margin-right: 2px;
     }
   }
 }
