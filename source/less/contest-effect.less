@@ -1,0 +1,44 @@
+.contest-effect{
+  width: 320px;
+  min-height: 321px;
+  padding-left: 20px;
+  padding-top: 31px;
+  box-sizing: border-box;
+
+  background-color: @white ;
+
+  & textarea{
+    width: 280px;
+    min-height: 201px;
+    box-sizing: border-box;
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-indent: -4.75em;
+
+    border: 2px solid @dark-gray;
+
+    resize: none;
+  }
+
+  @media(min-width: @tablet-width){
+    width: 660px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 940px;
+  }
+}
+
+.contest-effect label{
+  margin-left: 48px;
+
+  font-size: 14px;
+  color: @lipstick;
+  text-transform: uppercase;
+}

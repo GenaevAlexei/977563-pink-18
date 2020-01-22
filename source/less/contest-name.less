@@ -1,0 +1,75 @@
+.contest-name{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  background-color: @white ;
+  border:  none ;
+
+  & label{
+    padding-left: 23px;
+
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: @lipstick;
+  }
+
+  & input{
+    width: 280px ;
+    height: 63px;
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 4px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: @very-dark;
+
+    border: 2px solid @dark-gray;
+
+    @media(min-width: @tablet-width){
+    flex-grow: 1;
+    }
+  }
+
+  & li{
+    margin-bottom: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    @media(min-width: @tablet-width){
+    display: flex;
+    justify-content: space-between;
+    }
+  }
+
+  & li:last-child{
+    margin-bottom: 11px;
+  }
+
+  & ul{
+    width: 320px;
+    min-height: 360px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    @media(min-width: @tablet-width){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 660px;
+    min-height: 293px;
+    }
+
+    @media(min-width: @desktop-width){
+      width: 435px;
+      min-height: 295px;
+    }
+  }
+}
