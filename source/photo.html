@@ -303,23 +303,35 @@
          width="280" height="374" alt="Зимняя дорога">
         <div class="photo-editor__tools-wrapper">
           <ul class="photo-editor__tools">
-             <li>
-               <svg class=""  width="48" height="48">
-                 <use xlink:href="#icon-editor-crop"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--crop">
+               <a class="photo-editor__control">
+                 <svg class=""  width="48" height="48">
+                   <use xlink:href="#icon-editor-crop" fill="currentColor"></use>
+                 </svg>
+               <a>
              </li>
-             <li>
-               <svg class=""  width="48" height="48">
-                 <use xlink:href="#icon-editor-fill"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--fill">
+               <a class="photo-editor__control">
+                 <svg class=""  width="48" height="48">
+                   <use xlink:href="#icon-editor-fill" fill="currentColor"></use>
+                 </svg>
+               </a>
              </li>
-             <li>
-               <svg class=""  width="31.92" height="31.92">
-                 <use xlink:href="#icon-editor-contrast"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--contrast">
+               <a class="photo-editor__control">
+                 <svg class=""  width="31.92" height="31.92">
+                   <use xlink:href="#icon-editor-contrast" fill="currentColor"></use>
+                 </svg>
+               </a>
              </li>
            </ul>
-           <div class="photo-editor__band">
+           <div class="photo-editor__band-wrapper">
+             <div class="photo-editor__band-line">
+                <a class="photo-editor__band-control">
+                </a>
+             </div>
+           </div>
+           <div class="photo-editor__divider">
            </div>
            <div class="photo-editor__loader">
               <button class="button button--editor-post">
@@ -379,6 +391,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <Sscript src="js/script.js"></script>
   </body>
 </html>

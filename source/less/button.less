@@ -43,17 +43,55 @@
 }
 
 .button--editor-post{
+  width: 280px;
+  padding: 0;
+  padding-bottom: 4px;
+  margin-left: 18px;
+  margin-top: 38px;
+  margin-bottom: 0;
+
   color: @lipstick;
 
   border-color: @lipstick;
   background-color: @gray;
+
+  &:hover{
+    color: @white;
+
+    background-color: @lipstick;
+  }
+
+  &:active{
+    color: @white-transparent30;
+    background-color: @lipstick;
+  }
 }
 
 .button--editor-cancel{
-  color: @dark-gray;
+  width: 280px;
+  padding: 0;
+  padding-bottom: 4px;
+  margin-left: 18px;
+  margin-top: 12px;
 
-  border-color: @dark-gray;
+  color: @middle-gray;
+
+  border-color: @middle-gray;
   background-color: @gray;
+
+  &:hover{
+    color: @dark-gray;
+
+    background-color: @gray;
+    border-color: @dark-gray;
+  }
+
+  &:active{
+    color: @middle-gray;
+
+    background-color: @dark-gray;
+    border-color: @dark-gray;
+  }
 }
 
 .button--form{
