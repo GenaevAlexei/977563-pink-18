@@ -65,6 +65,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
+  @media (min-width: @desktop-width){
+    justify-content: center;
+  }
 }
 
 .recent__item{
@@ -95,30 +99,5 @@
     width: 100% ;
     margin: 0 ;
     margin-bottom: 49px ;
-  }
-}
-
-// Для desktop:
-
-@media (min-width: @desktop-width) {
-  .recent__appeal{
-
-  }
-
-
-
-  .recent__list{
-    justify-content: center;
-  }
-
-
-
-  .recent__item{
-
-
-  }
-
-  .recent__item--day{
-
   }
 }

@@ -300,32 +300,66 @@
         </p>
       </section>
       <section class="photo-editor">
-        <img class="photo-editor__image"
-         src="img/photo-road-mobile@1x.jpg"
-         srcset="img/photo-road-mobile@2x.jpg 2x"
-         width="280" height="374" alt="Зимняя дорога">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)"
+          srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+          srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="photo-editor__image"
+           src="img/photo-road-mobile@1x.jpg"
+           srcset="img/photo-road-mobile@2x.jpg 2x"
+           width="280" height="374" alt="Зимняя дорога">
+         </picture>
         <div class="photo-editor__tools-wrapper">
           <ul class="photo-editor__tools">
              <li class="photo-editor__item photo-editor__item--crop">
-               <a class="photo-editor__control">
-                 <svg class=""  width="48" height="48">
-                   <use xlink:href="#icon-editor-crop" fill="currentColor"></use>
-                 </svg>
-               <a>
+                <a class="photo-editor__control">
+                  <svg class="photo-editor__crop-icon"  width="48" height="48">
+                    <use xlink:href="#icon-editor-crop" fill="currentColor"></use>
+                  </svg>
+                </a>
+                <div class="photo-editor__band-wrapper photo-editor__band-wrapper--crop">
+                  <div class="photo-editor__band-line photo-editor__band-line--crop">
+                   <a class="photo-editor__band-control photo-editor__band-control--crop">
+                   </a>
+                 </div>
+               </div>
              </li>
              <li class="photo-editor__item photo-editor__item--fill">
                <a class="photo-editor__control">
-                 <svg class=""  width="48" height="48">
+                 <svg class="photo-editor__fill-icon"  width="48" height="48">
                    <use xlink:href="#icon-editor-fill" fill="currentColor"></use>
                  </svg>
                </a>
+               <div class="photo-editor__band-wrapper
+                 photo-editor__band-wrapper--fill">
+                 <div class="photo-editor__band-line
+                      photo-editor__band-line--fill">
+                   <a class="photo-editor__band-control
+                     photo-editor__band-control--fill">
+                   </a>
+                 </div>
+               </div>
              </li>
              <li class="photo-editor__item photo-editor__item--contrast">
                <a class="photo-editor__control">
-                 <svg class=""  width="31.92" height="31.92">
+                 <svg class="photo-editor__contrast-icon"  width="31.92" height="31.92">
                    <use xlink:href="#icon-editor-contrast" fill="currentColor"></use>
                  </svg>
                </a>
+               <div class="photo-editor__band-wrapper
+                 photo-editor__band-wrapper--contrast">
+                 <div class="photo-editor__band-line
+                      photo-editor__band-line--contrast">
+                   <a class="photo-editor__band-control
+                       photo-editor__band-control--contrast">
+                   </a>
+                 </div>
+               </div>
              </li>
            </ul>
            <div class="photo-editor__band-wrapper">
@@ -394,6 +428,6 @@
         </div>
       </div>
     </footer>
-    <Sscript src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
