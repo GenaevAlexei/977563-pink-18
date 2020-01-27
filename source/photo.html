@@ -74,13 +74,16 @@
               </p>
               <a class="post__day-link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                   srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                   srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                  <img class="post__image post__image--day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Вид с моста над ущельем">
+                  <img class="post__image post__image--day" src="img/panorama-mobile@1x.jpg"
+                   srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Вид с моста над ущельем">
               </picture>
               </a>
               <div class="post__text-wrapper post__text-wrapper--day">
@@ -297,29 +300,75 @@
         </p>
       </section>
       <section class="photo-editor">
-        <img class="photo-editor__image"
-         src="img/photo-road-mobile@1x.jpg"
-         srcset="img/photo-road-mobile@2x.jpg 2x"
-         width="280" height="374" alt="Зимняя дорога">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)"
+          srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+          srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="photo-editor__image"
+           src="img/photo-road-mobile@1x.jpg"
+           srcset="img/photo-road-mobile@2x.jpg 2x"
+           width="280" height="374" alt="Зимняя дорога">
+         </picture>
         <div class="photo-editor__tools-wrapper">
           <ul class="photo-editor__tools">
-             <li>
-               <svg class=""  width="48" height="48">
-                 <use xlink:href="#icon-editor-crop"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--crop">
+                <a class="photo-editor__control">
+                  <svg class="photo-editor__crop-icon"  width="48" height="48">
+                    <use xlink:href="#icon-editor-crop" fill="currentColor"></use>
+                  </svg>
+                </a>
+                <div class="photo-editor__band-wrapper photo-editor__band-wrapper--crop">
+                  <div class="photo-editor__band-line photo-editor__band-line--crop">
+                   <a class="photo-editor__band-control photo-editor__band-control--crop">
+                   </a>
+                 </div>
+               </div>
              </li>
-             <li>
-               <svg class=""  width="48" height="48">
-                 <use xlink:href="#icon-editor-fill"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--fill">
+               <a class="photo-editor__control">
+                 <svg class="photo-editor__fill-icon"  width="48" height="48">
+                   <use xlink:href="#icon-editor-fill" fill="currentColor"></use>
+                 </svg>
+               </a>
+               <div class="photo-editor__band-wrapper
+                 photo-editor__band-wrapper--fill">
+                 <div class="photo-editor__band-line
+                      photo-editor__band-line--fill">
+                   <a class="photo-editor__band-control
+                     photo-editor__band-control--fill">
+                   </a>
+                 </div>
+               </div>
              </li>
-             <li>
-               <svg class=""  width="31.92" height="31.92">
-                 <use xlink:href="#icon-editor-contrast"></use>
-               </svg>
+             <li class="photo-editor__item photo-editor__item--contrast">
+               <a class="photo-editor__control">
+                 <svg class="photo-editor__contrast-icon"  width="31.92" height="31.92">
+                   <use xlink:href="#icon-editor-contrast" fill="currentColor"></use>
+                 </svg>
+               </a>
+               <div class="photo-editor__band-wrapper
+                 photo-editor__band-wrapper--contrast">
+                 <div class="photo-editor__band-line
+                      photo-editor__band-line--contrast">
+                   <a class="photo-editor__band-control
+                       photo-editor__band-control--contrast">
+                   </a>
+                 </div>
+               </div>
              </li>
            </ul>
-           <div class="photo-editor__band">
+           <div class="photo-editor__band-wrapper">
+             <div class="photo-editor__band-line">
+                <a class="photo-editor__band-control">
+                </a>
+             </div>
+           </div>
+           <div class="photo-editor__divider">
            </div>
            <div class="photo-editor__loader">
               <button class="button button--editor-post">
@@ -332,50 +381,51 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__item">
-        <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
-          <svg class="page-footer__pink-logo" width="146.3" height="40.375">
-            <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
-          </svg>
-          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3" height="40.375">
-              <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="page-footer__item">
-        <ul class="page-footer__social social-list">
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Twitter">
-              <svg class="social-list__twitter-icon" width="17.5" height="14.663">
-                <use xlink:href="#icon-twitter" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Facebook">
-              <svg class="social-list__facebook-icon" width="8.673" height="18.944">
-                  <use xlink:href="#icon-facebook" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Youtube">
-              <svg class="social-list__youtube-icon" width="14.64" height="13.96">
-                 <use xlink:href="#icon-youtube" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__item copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link">
-          <svg class="copyright__logo" width="26.943" height="34.09">
-           <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
-          </svg>
-
-        </a>
+    <footer class="page-footer page-footer--photo">
+      <div class="page-footer__logos-wrapper">
+        <div class="page-footer__item">
+          <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
+            <svg class="page-footer__pink-logo" width="146.3" height="40.375">
+              <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
+            </svg>
+            <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3" height="40.375">
+                <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__item">
+          <ul class="page-footer__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Twitter">
+                <svg class="social-list__twitter-icon" width="17.5" height="14.663">
+                  <use xlink:href="#icon-twitter" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Facebook">
+                <svg class="social-list__facebook-icon" width="8.673" height="18.944">
+                    <use xlink:href="#icon-facebook" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Youtube">
+                <svg class="social-list__youtube-icon" width="14.64" height="13.96">
+                   <use xlink:href="#icon-youtube" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__item copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="#" class="copyright__link">
+            <svg class="copyright__logo" width="26.943" height="34.09">
+             <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>

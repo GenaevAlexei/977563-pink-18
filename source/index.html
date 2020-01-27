@@ -171,7 +171,12 @@
       <section class="reviews">
         <ul class="reviews__list">
           <li class="reviews__item">
-            <b class="reviews__username">Николай Петров</b>
+            <p class="rewiews__user-info">
+              25 лет, водитель трамвая
+            </p>
+            <p class="reviews__username">
+              <b>Николай Петров</b>
+            </p>
             <p class="reviews__description">
               «Это приложение перевернуло мой мир и
                позволило по-новому взглянуть на
@@ -179,100 +184,253 @@
                познакомился со своей будущей женой в
                комментариях к выложенной фотографии!»
             </p>
+            <svg class="reviews__quotes" width="78.672px" height="63.789px">
+              <use xlink:href="#icon-quotes" fill="#efefef">
+            </svg>
           </li>
         </ul>
-        <ul class="checks-slider">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div class="checks-slider">
+          <div class="checks-slider__inputs visually-hidden">
+            <input id="slide-1" type="radio" name="toggle">
+            <input id="slide-2" type="radio" name="toggle">
+            <input id="slide-3" type="radio" name="toggle">
+          </div>
+          <div class="checks-slider__controls">
+            <label class="checks-slider__control-item"
+             for="slide-1">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-2">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-3">
+            </label>
+          </div>
+        </div>
+        <button class="reviews__arrow reviews__arrow--left">
+          <svg class="" width="22px" height="41px">
+            <use xlink:href="#icon-review-arrow-left" fill="currentColor">
+          </svg>
+        </button>
+        <button class="reviews__arrow reviews__arrow--right">
+          <svg class="" width="22px" height="41px">
+            <use xlink:href="#icon-review-arrow-right" fill="currentColor">
+          </svg>
+        </button>
       </section>
       <section class="product">
-        <ul class="product__list">
-            <li class="product__name">
-                <b>Стандарт</b>
-                3,99 USD
-            </li>
-            <li class="product__option">
+        <table class="product__list">
+          <tr>
+            <td class="product__name product__name--invisible">
+            </td>
+            <td class="product__name">
+                <b>База</b><br>
+                <span class="product__usd">1,99 USD</span>
+            </td>
+            <td class="product__name product__name--hit">
+                <b>Стандарт</b><br>
+                <span class="product__usd">3,99 USD</span>
+            </td>
+            <td class="product__name">
+                <b>Анлим</b><br>
+                <span class="product__usd">9,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="product__option product__option--first">
               Розовый фильтр
-            </li>
-            <li class="product__option">
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Розовый фильтр
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Розовый фильтр
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Розовый фильтр
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="product__option product__option--first">
               Смайлики
-            </li>
-            <li class="product__option product__option--no">
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Смайлики
+                <svg class="product__marker product__marker--no" width="27" height="26">
+                  <use xlink:href="#icon-no" fill="#f25b26">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Смайлики
+                <svg class="product__marker product__marker--yes" width="33" height="22">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option">
+              <div class="product__option--wrapper">
+                Смайлики
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="product__option product__option--first">
               Комментарии
-            </li>
-        </ul>
-        <ul class="checks-slider">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+            </td>
+            <td class="product__option product__option--no">
+              <div class="product__option--wrapper">
+                Комментарии
+                <svg class="product__marker product__marker--no" width="27" height="26">
+                  <use xlink:href="#icon-no" fill="#f25b26">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option product__option--no">
+              <div class="product__option--wrapper">
+                Комментарии
+                <svg class="product__marker product__marker--no" width="27" height="26">
+                  <use xlink:href="#icon-no" fill="#f25b26">
+                  </use>
+                </svg>
+              </div>
+            </td>
+            <td class="product__option product__option--yes">
+              <div class="product__option--wrapper">
+                Комментарии
+                <svg class="product__marker product__marker--yes" width="31" height="21">
+                  <use xlink:href="#icon-yes" fill="#3dc644">
+                  </use>
+                </svg>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="checks-slider checks-slider--product">
+          <div class="checks-slider__inputs visually-hidden">
+            <input id="slide-1" type="radio" name="toggle">
+            <input id="slide-2" type="radio" name="toggle">
+            <input id="slide-3" type="radio" name="toggle">
+          </div>
+          <div class="checks-slider__controls">
+            <label class="checks-slider__control-item"
+             for="slide-1">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-2">
+            </label>
+            <label class="checks-slider__control-item"
+             for="slide-3">
+            </label>
+          </div>
+        </div>
       </section>
+    </main>
+    <footer class="page-footer page-footer--index">
       <section class="contacts">
         <ul class="contacts__list">
             <li class="contacts__item contacts__item--appeal">
                Остались вопросы?
                Свяжитесь с нами!
             </li>
-            <li class="contacts__item">
-              <b>Звоните</b>
-              +7(812)555-66-66
+            <li class="contacts__item contacts__item--tel">
+              <b>Звоните:</b>
+              <span>
+                +7 (812) 555-66-66
+              </span>
             </li>
-            <li class="contacts__item">
-              <b>Пишите</b>
+            <li class="contacts__item contacts__item--mail">
+              <b>Пишите:</b>
+              <span>
               mail@htmlacademy.ru
+              </span>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--address">
               <b>Приезжайте в гости:</b>
-              ул.Большая Конюшенная, 19/8
+              <span>
+              <span class="contacts__bad-string">ул. Большая</span><br>
+              Конюшенная, 19/8
+              </span>
             </li>
         </ul>
+        <div class="contacts__triangle">
+        </div>
+        <!--<svg class="contacts__triangle" width="1200px" height="100px">
+          <use xlink:href="#bg-triangle-white-footer-desktop"></use>
+        </svg>-->
       </section>
-    </main>
-    <footer class="page-footer page-footer--index">
-      <div class="page-footer__item">
-        <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
-          <svg class="page-footer__pink-logo" width="146.3px" height="40.375px">
-            <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
-          </svg>
-          <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3px" height="40.375px">
-              <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
-          </svg>
-        </a>
-      </div>
-      <div class="page-footer__item">
-        <ul class="page-footer__social social-list">
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Twitter">
-              <svg class="social-list__twitter-icon" width="17.5px" height="14.663px">
-                <use xlink:href="#icon-twitter" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Facebook">
-              <svg class="social-list__facebook-icon" width="8.673px" height="18.944px">
-                  <use xlink:href="#icon-facebook" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__button" href="#" title="Youtube">
-              <svg class="social-list__youtube-icon" width="14.64px" height="13.96px">
-                 <use xlink:href="#icon-youtube" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__item copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link" title="HTML Academy">
-          <svg class="copyright__logo" width="26.943px" height="34.09px">
-           <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
-          </svg>
-        </a>
+      <div class="page-footer__logos-wrapper
+      page-footer__logos-wrapper--index">
+        <div class="page-footer__item">
+          <a href="#" class="page-footer__logo-link" title="Логотип Пинк">
+            <svg class="page-footer__pink-logo" width="146.3px" height="40.375px">
+              <use xlink:href="#logo-pink-blue-mobile" fill="currentColor"></use>
+            </svg>
+            <svg class="page-footer__pink-logo page-footer__pink-logo--desktop" width="146.3px" height="40.375px">
+                <use xlink:href="#logo-pink-blue-desktop" fill="currentColor"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__item">
+          <ul class="page-footer__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Twitter">
+                <svg class="social-list__twitter-icon" width="17.5px" height="14.663px">
+                  <use xlink:href="#icon-twitter" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Facebook">
+                <svg class="social-list__facebook-icon" width="8.673px" height="18.944px">
+                    <use xlink:href="#icon-facebook" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__button" href="#" title="Youtube">
+                <svg class="social-list__youtube-icon" width="14.64px" height="13.96px">
+                   <use xlink:href="#icon-youtube" fill="currentColor"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__item copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="#" class="copyright__link" title="HTML Academy">
+            <svg class="copyright__logo" width="26.943px" height="34.09px">
+             <use xlink:href="#logo-htmlacademy" fill="currentColor"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
