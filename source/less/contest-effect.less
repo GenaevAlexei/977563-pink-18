@@ -23,6 +23,8 @@
 
   @media(min-width: @desktop-width){
     width: 940px;
+    min-height: 226px;
+    padding-top: 12px;
   }
 }
 
@@ -40,7 +42,7 @@
   line-height: 30px;
   text-indent: -4.75em;
 
-  border: 2px solid @dark-gray;
+  border: 2px solid @middle-gray;
 
   resize: none;
 
@@ -48,6 +50,12 @@
     width: 500px;
     min-height: 193px;
     padding-left: 20px;
+  }
+
+  @media(min-width: @desktop-width){
+    width: 820px;
+    min-height: 128px;
+    box-sizing: border-box;
   }
 }
 
@@ -62,6 +70,7 @@
   text-transform: uppercase;
 
   @media(min-width: @tablet-width){
+    width: 258px;
     position: static;
   }
 }

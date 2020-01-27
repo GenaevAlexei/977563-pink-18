@@ -21,6 +21,8 @@
 
   @media(min-width: @desktop-width){
     width: 940px;
+    min-height: 170px;
+    margin-top: 46px;
   }
 }
 
@@ -54,6 +56,10 @@
     margin-left: 55px;
     margin-top: 10px;
   }
+
+  @media(min-width: @desktop-width){
+
+  }
 }
 
 .contest-number input{
@@ -81,6 +87,11 @@
 
     border-right: 62px solid @middle-gray;
   }
+
+  @media(min-width: @desktop-width){
+    width: 375px;
+    margin-top: 2px;
+  }
 }
 
 .contest-number__phone{
@@ -93,6 +104,11 @@
     top: 27px;
     left: 515px;
   }
+
+  @media(min-width: @desktop-width){
+    top: 24px;
+    left: 390px;
+  }
 }
 
 .contest-number__mail{
@@ -104,6 +120,11 @@
     position: absolute;
     top: 30px;
     left: 516px;
+  }
+
+  @media(min-width: @desktop-width){
+    top: 27px;
+    left: 391px;
   }
 }
 
@@ -124,12 +145,21 @@
 
 .contest-number li:first-child{
   @media(min-width: @tablet-width){
-     margin-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media(min-width: @desktop-width){
+    margin-bottom: 0;
   }
 }
 
 .contest-number li:last-child{
   margin-bottom: 8px;
+
+  @media(min-width: @desktop-width){
+    margin-left: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .contest-number ul{
@@ -137,4 +167,8 @@
   padding: 0;
 
   list-style: none;
+
+  @media(min-width: @desktop-width){
+    display: flex;
+  }
 }
