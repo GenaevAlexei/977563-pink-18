@@ -11,35 +11,48 @@
   background-color: @gray;
   border:  none ;
 
-  & legend{
-    position: absolute;
-    top: 38px;
-    left: 18px;
-
-    width: 280px;
-
-    font-size: 14px;
-    line-height: 18px;
-    //letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: @lipstick;
-  }
-
-  & ul{
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
   @media(min-width: @tablet-width){
-    width: 660px;
+    width: 620px;
+    min-height: 561px;
+    margin: auto;
+    margin-top: 57px;
+    padding-top: 44px;
+
+    border: 2px solid @middle-gray;
+    background-color: @white;
   }
 
   @media(min-width: @desktop-width){
     width: 940px;
   }
+}
+
+.contest-progress legend{
+  position: absolute;
+  top: 38px;
+  left: 18px;
+
+  width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
+  //letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: @lipstick;
+
+  @media(min-width: @tablet-width){
+    position: static;
+
+    width: 436px;
+  }
+}
+
+.contest-progress ul{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .contest-progress__control{
@@ -52,6 +65,10 @@
 
   border: 2px solid @dark-gray;
   background-color: @white;
+
+  @media(min-width: @tablet-width){
+    margin-right: 20px;
+  }
 }
 
 .contest-progress label{
@@ -60,6 +77,10 @@
   margin-left: 5px;
 
   font-size: 18px;
+
+  @media(min-width: @tablet-width){
+    margin-left: 43px;
+  }
 }
 
 .contest-progress li{

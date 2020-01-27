@@ -66,6 +66,9 @@
           Поделитесь своей историей и получите
           шанс выиграть ценный приз &mdash; 1000
           миль на вашу бонусную карту!
+          <span class="contest-form__write">
+            Пожалуйста, заполните форму ниже:
+          </span>
         </p>
         <form class="contest-form__form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="contest-form__list">
@@ -177,14 +180,27 @@
             </li>
             <li class="contest-form__item contest-form__item--number">
               <fieldset class="contest-number">
+                <legend>
+                  Контактная информация
+                </legend>
                 <ul>
                   <li>
                     <label for="phone">Номер телефона</label>
-                    <input id="phone" type="text" placeholder="Номер, пожалуйста">
+                    <input id="phone" type="text"
+                      placeholder="Номер, пожалуйста">
+                    <svg class="contest-number__phone" width="22px" height="19px">
+                      <use xlink:href="#icon-phone" fill="#d22856">
+                      </use>
+                    </svg>
                   </li>
                   <li>
                     <label for="mail">Адрес почты</label>
-                    <input id="mail" type="text" placeholder="Введите почту *">
+                    <input id="mail" type="text"
+                      placeholder="Введите почту *">
+                    <svg class="contest-number__mail" width="20px" height="13px">
+                      <use xlink:href="#icon-mail" fill="#d22856">
+                      </use>
+                    </svg>
                   </li>
                 </ul>
               </fieldset>
@@ -241,17 +257,17 @@
               </div>
             </li>
             <li class="contest-form__item contest-form__item--effect">
-              <div class="contest-effect">
-                <label for="effect">Опишите свои эмоции</label>
+              <fieldset class="contest-effect">
+                <legend for="effect">Опишите свои эмоции</legend>
                 <textarea id="effect" rows="5">
-                  Можно прям в красках, не стесняясь в выражениях.
+                  Можно прям в красках, не стесняясь в выражениях
                 </textarea>
-              </div>
+              </fieldset>
             </li>
             <li class="contest-form__item contest-form__item--submit">
               <input class="button button--form" type="submit" value="Отправить форму">
               <p class="contest-form__note">
-                <span>*</span>&mdash; Обязательные поля
+                <span>*</span> &mdash; Обязательные поля
               </p>
             </li>
           </ul>
@@ -313,6 +329,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <Sscript src="js/script.js"></script>
   </body>
 </html>

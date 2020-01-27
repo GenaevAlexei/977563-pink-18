@@ -10,35 +10,52 @@
   background-color: @gray;
   border: none;
 
-  & legend{
-    position: absolute;
-    top: 38px;
-    left: 18px;
-
-    width: 280px;
-
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    color: @lipstick;
-  }
-
-  & ul{
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
   @media(min-width: @tablet-width){
-    width: 660px;
+    width: 620px;
+    min-height: 307px;
+    margin: auto;
+    margin-top: 47px;
+    padding-top: 44px;
+
+    border: 2px solid @middle-gray;
+    background-color: @white;
   }
 
   @media(min-width: @desktop-width){
     width: 435px;
     min-height: 310px;
     margin-left: 70px;
+  }
+}
+
+.contest-application legend{
+  position: absolute;
+  top: 38px;
+  left: 18px;
+
+  width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @lipstick;
+
+  @media(min-width: @tablet-width){
+    position: static;
+
+    width: 368px;
+  }
+}
+
+.contest-application ul{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media(min-width: @tablet-width){
+    margin-left: 38px;
   }
 }
 
@@ -53,6 +70,10 @@
   border: 2px solid @dark-gray;
   border-radius: 50%;
   background-color: @white;
+
+  @media(min-width: @tablet-width){
+    margin-right: 21px;
+  }
 }
 
 .contest-application label{
