@@ -44,14 +44,30 @@
 }
 
 .reviews__item{
+  min-height: 264px;
+
   @media(min-width: @tablet-width){
     display: flex;
     flex-direction: column-reverse;
+
+    min-height: 208px;
   }
 
   @media(min-width: @desktop-width){
     padding-top: 72px;
   }
+}
+
+.reviews__item--one{
+  display: block;
+}
+
+.reviews__item--two{
+  display: none;
+}
+
+.reviews__item--three{
+  display: none;
 }
 
 .rewiews__user-info{

@@ -54,6 +54,7 @@
 
   border-color: @lipstick;
   background-color: @gray;
+  outline: none;
 
   &:hover{
     color: @white;
@@ -92,6 +93,7 @@
 
   border-color: @middle-gray;
   background-color: @gray;
+  outline: none;
 
   &:hover{
     color: @dark-gray;
@@ -133,6 +135,20 @@
   border: none ;
   border-radius: 0 ;
   background-color: @green ;
+  outline: none;
+
+  &:hover{
+    color: @white;
+    background-color: @dark-green ;
+  }
+
+  &:active{
+    color: @white-transparent30;
+  }
+
+  &:disabled{
+    background-color: @light-gray;
+  }
 
   @media (min-width: @tablet-width){
     width: 300px;
@@ -146,9 +162,27 @@
 }
 
 .button--popup{
+  padding: 0;
+  margin-top: 50px;
+
   text-transform: uppercase;
 
   border: none ;
   border-radius: 0 ;
   background-color: @green ;
+
+  @media (min-width: @tablet-width){
+     width: 295px;
+     height: 59px;
+  }
+}
+
+.button--popup-error{
+  width: 276px;
+  height: 59px;
+  margin-top: 0 ;
+
+  @media (min-width: @desktop-width){
+    margin-top: 30px;
+  }
 }

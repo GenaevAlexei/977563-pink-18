@@ -170,7 +170,7 @@
       </section>
       <section class="reviews">
         <ul class="reviews__list">
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--one">
             <p class="rewiews__user-info">
               25 лет, водитель трамвая
             </p>
@@ -188,23 +188,31 @@
               <use xlink:href="#icon-quotes" fill="#efefef">
             </svg>
           </li>
+          <li class="reviews__item reviews__item--two">
+          </li>
+          <li class="reviews__item reviews__item--three">
+          </li>
         </ul>
         <div class="checks-slider">
-          <div class="checks-slider__inputs visually-hidden">
-            <input id="slide-1" type="radio" name="toggle">
-            <input id="slide-2" type="radio" name="toggle">
-            <input id="slide-3" type="radio" name="toggle">
-          </div>
           <div class="checks-slider__controls">
-            <label class="checks-slider__control-item"
-             for="slide-1">
-            </label>
-            <label class="checks-slider__control-item"
-             for="slide-2">
-            </label>
-            <label class="checks-slider__control-item"
-             for="slide-3">
-            </label>
+            <div>
+              <input class="visually-hidden checks-slider__checkbox" id="slide-1"
+                type="radio" name="toggle" checked>
+              <label class="checks-slider__control-item checks-slider__control-item--one"
+               for="slide-1"></label>
+            </div>
+            <div>
+              <input class="visually-hidden checks-slider__checkbox" id="slide-2"
+                type="radio" name="toggle">
+              <label class="checks-slider__control-item checks-slider__control-item--two"
+               for="slide-2"></label>
+            </div>
+            <div>
+              <input class="visually-hidden checks-slider__checkbox" id="slide-3"
+                type="radio" name="toggle">
+              <label class="checks-slider__control-item checks-slider__control-item--three"
+               for="slide-3"></label>
+            </div>
           </div>
         </div>
         <button class="reviews__arrow reviews__arrow--left">
@@ -334,21 +342,28 @@
           </tr>
         </table>
         <div class="checks-slider checks-slider--product">
-          <div class="checks-slider__inputs visually-hidden">
-            <input id="slide-1" type="radio" name="toggle">
-            <input id="slide-2" type="radio" name="toggle">
-            <input id="slide-3" type="radio" name="toggle">
-          </div>
-          <div class="checks-slider__controls">
-            <label class="checks-slider__control-item"
-             for="slide-1">
-            </label>
-            <label class="checks-slider__control-item"
-             for="slide-2">
-            </label>
-            <label class="checks-slider__control-item"
-             for="slide-3">
-            </label>
+          <div class="checks-slider__controls--product">
+            <div>
+              <input class="visually-hidden checks-slider__checkbox--product
+                checks-slider__checkbox--one" id="slide-product-1"
+                type="radio" name="toggle-product" >
+              <label class="checks-slider__control-item--product checks-slider__control-item--one"
+              for="slide-product-1"></label>
+            </div>
+            <div>
+              <input class="visually-hidden checks-slider__checkbox--product
+                checks-slider__checkbox--two" id="slide-product-2"
+                type="radio" name="toggle-product" checked>
+              <label class="checks-slider__control-item--product checks-slider__control-item--two"
+               for="slide-product-2"></label>
+            </div>
+            <div>
+              <input class="visually-hidden checks-slider__checkbox--product
+                 checks-slider__checkbox--three" id="slide-product-3"
+                type="radio" name="toggle-product">
+              <label class="checks-slider__control-item--product checks-slider__control-item--three"
+               for="slide-product-3"></label>
+            </div>
           </div>
         </div>
       </section>
@@ -368,9 +383,9 @@
             </li>
             <li class="contacts__item contacts__item--mail">
               <b>Пишите:</b>
-              <span>
-              mail@htmlacademy.ru
-              </span>
+              <a href="">
+                mail@htmlacademy.ru
+              </a>
             </li>
             <li class="contacts__item contacts__item--address">
               <b>Приезжайте в гости:</b>
@@ -434,5 +449,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/slider-product.js"></script>
   </body>
 </html>
